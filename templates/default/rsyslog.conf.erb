@@ -6,32 +6,32 @@
 #
 # Set max message size
 #
-$MaxMessageSize <%= node['rsyslog']['max_message_size'] %>
+$MaxMessageSize <%= node[:rackspace_rsyslog][:max_message_size] %>
 
 #
 # Preserve FQDN
 #
-$PreserveFQDN <%= node['rsyslog']['preserve_fqdn'] %>
+$PreserveFQDN <%= node[:rackspace_rsyslog][:preserve_fqdn] %>
 
 #################
 #### MODULES ####
 #################
 
-<% if node['rsyslog']['modules'] && !node['rsyslog']['modules'].empty? %>
-  <% [*node['rsyslog']['modules']].each do |mod| %>
+<% if node[:rackspace_rsyslog][:modules] && !node[:rackspace_rsyslog][:modules].empty? %>
+  <% [*node[:rackspace_rsyslog][:modules]].each do |mod| %>
 $ModLoad <%= mod %>
   <% end %>
 <% end %>
 
-<% if node['rsyslog']['server'] -%>
-# Provide <%= node['rsyslog']['protocol'].upcase %> log reception
-<% case node['rsyslog']['protocol'] -%>
+<% if node[:rackspace_rsyslog][:server] -%>
+# Provide <%= node[:rackspace_rsyslog][:protocol].upcase %> log reception
+<% case node[:rackspace_rsyslog][:protocol] -%>
 <% when "tcp" -%>
 $ModLoad imtcp
-$InputTCPServerRun <%= node['rsyslog']['port'] %>
+$InputTCPServerRun <%= node[:rackspace_rsyslog][:port] %>
 <% when "udp" -%>
 $ModLoad imudp
-$UDPServerRun <%= node['rsyslog']['port'] %>
+$UDPServerRun <%= node[:rackspace_rsyslog][:port] %>
 <% end -%>
 <% end -%>
 
@@ -48,7 +48,7 @@ $ActionFileDefaultTemplate RSYSLOG_TraditionalFileFormat
 <% end -%>
 
 # Filter duplicated messages
-$RepeatedMsgReduction <%= node['rsyslog']['repeated_msg_reduction'] %>
+$RepeatedMsgReduction <%= node[:rackspace_rsyslog][:repeated_msg_reduction] %>
 
 #
 # Set temporary directory to buffer syslog queue
@@ -58,16 +58,16 @@ $WorkDirectory /var/spool/rsyslog
 #
 # Set the default permissions for all log files.
 #
-$FileOwner <%= node['rsyslog']['user'] %>
-$FileGroup <%= node['rsyslog']['group'] %>
+$FileOwner <%= node[:rackspace_rsyslog][:user] %>
+$FileGroup <%= node[:rackspace_rsyslog][:group] %>
 $FileCreateMode 0640
 $DirCreateMode 0755
 $Umask 0022
-<% if node['rsyslog']['priv_seperation'] %>
-$PrivDropToUser <%= node['rsyslog']['user'] %>
-$PrivDropToGroup <%= node['rsyslog']['group'] %>
+<% if node[:rackspace_rsyslog][:priv_seperation] %>
+$PrivDropToUser <%= node[:rackspace_rsyslog][:user] %>
+$PrivDropToGroup <%= node[:rackspace_rsyslog][:group] %>
 <% end %>
 #
-# Include all config files in <%= node['rsyslog']['config_prefix'] %>/rsyslog.d/
+# Include all config files in <%= node[:rackspace_rsyslog][:config_prefix] %>/rsyslog.d/
 #
-$IncludeConfig <%= node['rsyslog']['config_prefix'] %>/rsyslog.d/*.conf
+$IncludeConfig <%= node[:rackspace_rsyslog][:config_prefix] %>/rsyslog.d/*.conf
