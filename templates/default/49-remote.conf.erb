@@ -4,10 +4,10 @@ $ActionQueueFileName srvrfwd # set file name, also enables disk mode
 $ActionResumeRetryCount -1 # infinite retries on insert failure
 $ActionQueueSaveOnShutdown on # save in-memory data if rsyslog shuts down
 <% @servers.each do |server| -%>
-<% case node[:rackspace_rsyslog][:protocol] -%>
+<% case node[:rackspace_rsyslog][:config][:protocol] -%>
 <% when "tcp" -%>
-<%= node[:rackspace_rsyslog][:logs_to_forward] %> @@<%= server %>:<%= node[:rackspace_rsyslog][:port] %>
+<%= node[:rackspace_rsyslog][:config][:logs_to_forward] %> @@<%= server %>:<%= node[:rackspace_rsyslog][:config][:port] %>
 <% when "udp" -%>
-<%= node[:rackspace_rsyslog][:logs_to_forward] %> @<%= server %>:<%= node[:rackspace_rsyslog][:port] %>
+<%= node[:rackspace_rsyslog][:config][:logs_to_forward] %> @<%= server %>:<%= node[:rackspace_rsyslog][:config][:port] %>
 <% end -%>
 <% end -%>

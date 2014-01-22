@@ -1,0 +1,92 @@
+{
+  "total": 12,
+  "touched": 7,
+  "untouched": 5,
+  "coverage": 58.33,
+  "detailed": {
+    "package[rsyslog]": {
+      "source": {
+        "file": "/tmp/d20140122-588-1huxgxi/rackspace_rsyslog/recipes/default.rb",
+        "line": 21
+      },
+      "touched": true
+    },
+    "directory[/etc/rsyslog.d]": {
+      "source": {
+        "file": "/tmp/d20140122-588-1huxgxi/rackspace_rsyslog/recipes/default.rb",
+        "line": 24
+      },
+      "touched": true
+    },
+    "directory[/var/spool/rsyslog]": {
+      "source": {
+        "file": "/tmp/d20140122-588-1huxgxi/rackspace_rsyslog/recipes/default.rb",
+        "line": 30
+      },
+      "touched": true
+    },
+    "template[/etc/rsyslog.conf]": {
+      "source": {
+        "file": "/tmp/d20140122-588-1huxgxi/rackspace_rsyslog/recipes/default.rb",
+        "line": 38
+      },
+      "touched": false
+    },
+    "template[/etc/rsyslog.d/50-default.conf]": {
+      "source": {
+        "file": "/tmp/d20140122-588-1huxgxi/rackspace_rsyslog/recipes/default.rb",
+        "line": 46
+      },
+      "touched": false
+    },
+    "service[rsyslog]": {
+      "source": {
+        "file": "/tmp/d20140122-588-1huxgxi/rackspace_rsyslog/recipes/default.rb",
+        "line": 54
+      },
+      "touched": true
+    },
+    "template[/etc/rsyslog.d/49-remote.conf]": {
+      "source": {
+        "file": "/tmp/d20140122-588-1huxgxi/rackspace_rsyslog/recipes/client.rb",
+        "line": 45
+      },
+      "touched": false
+    },
+    "file[/etc/rsyslog.d/server.conf]": {
+      "source": {
+        "file": "/tmp/d20140122-588-1huxgxi/rackspace_rsyslog/recipes/client.rb",
+        "line": 55
+      },
+      "touched": true
+    },
+    "package[rsyslog-relp]": {
+      "source": {
+        "file": "/tmp/d20140122-588-1huxgxi/rackspace_rsyslog/recipes/default.rb",
+        "line": 22
+      },
+      "touched": true
+    },
+    "directory[/srv/rsyslog]": {
+      "source": {
+        "file": "/tmp/d20140122-588-1huxgxi/rackspace_rsyslog/recipes/server.rb",
+        "line": 26
+      },
+      "touched": true
+    },
+    "template[/etc/rsyslog.d/35-server-per-host.conf]": {
+      "source": {
+        "file": "/tmp/d20140122-588-1huxgxi/rackspace_rsyslog/recipes/server.rb",
+        "line": 33
+      },
+      "touched": false
+    },
+    "file[/etc/rsyslog.d/remote.conf]": {
+      "source": {
+        "file": "/tmp/d20140122-588-1huxgxi/rackspace_rsyslog/recipes/server.rb",
+        "line": 41
+      },
+      "touched": false
+    }
+  }
+}

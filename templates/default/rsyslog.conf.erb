@@ -6,32 +6,32 @@
 #
 # Set max message size
 #
-$MaxMessageSize <%= node[:rackspace_rsyslog][:max_message_size] %>
+$MaxMessageSize <%= node[:rackspace_rsyslog][:config][:max_message_size] %>
 
 #
 # Preserve FQDN
 #
-$PreserveFQDN <%= node[:rackspace_rsyslog][:preserve_fqdn] %>
+$PreserveFQDN <%= node[:rackspace_rsyslog][:config][:preserve_fqdn] %>
 
 #################
 #### MODULES ####
 #################
 
-<% if node[:rackspace_rsyslog][:modules] && !node[:rackspace_rsyslog][:modules].empty? %>
-  <% [*node[:rackspace_rsyslog][:modules]].each do |mod| %>
+<% if node[:rackspace_rsyslog][:config][:modules] && !node[:rackspace_rsyslog][:config][:modules].empty? %>
+  <% [*node[:rackspace_rsyslog][:config][:modules]].each do |mod| %>
 $ModLoad <%= mod %>
   <% end %>
 <% end %>
 
-<% if node[:rackspace_rsyslog][:server] -%>
-# Provide <%= node[:rackspace_rsyslog][:protocol].upcase %> log reception
-<% case node[:rackspace_rsyslog][:protocol] -%>
+<% if node[:rackspace_rsyslog][:config][:server] -%>
+# Provide <%= node[:rackspace_rsyslog][:config][:protocol].upcase %> log reception
+<% case node[:rackspace_rsyslog][:config][:protocol] -%>
 <% when "tcp" -%>
 $ModLoad imtcp
-$InputTCPServerRun <%= node[:rackspace_rsyslog][:port] %>
+$InputTCPServerRun <%= node[:rackspace_rsyslog][:config][:port] %>
 <% when "udp" -%>
 $ModLoad imudp
-$UDPServerRun <%= node[:rackspace_rsyslog][:port] %>
+$UDPServerRun <%= node[:rackspace_rsyslog][:config][:port] %>
 <% end -%>
 <% end -%>
 
@@ -39,7 +39,7 @@ $UDPServerRun <%= node[:rackspace_rsyslog][:port] %>
 #### GLOBAL DIRECTIVES ####
 ###########################
 
-<% unless node["rsyslog"]["high_precision_timestamps"] -%>
+<% unless node[:rackspace_rsyslog][:config][:high_precision_timestamps] -%>
 #
 # Use default timestamp format.
 # To enable high precision timestamps, comment out the following line.
@@ -48,7 +48,7 @@ $ActionFileDefaultTemplate RSYSLOG_TraditionalFileFormat
 <% end -%>
 
 # Filter duplicated messages
-$RepeatedMsgReduction <%= node[:rackspace_rsyslog][:repeated_msg_reduction] %>
+$RepeatedMsgReduction <%= node[:rackspace_rsyslog][:config][:repeated_msg_reduction] %>
 
 #
 # Set temporary directory to buffer syslog queue
@@ -58,16 +58,16 @@ $WorkDirectory /var/spool/rsyslog
 #
 # Set the default permissions for all log files.
 #
-$FileOwner <%= node[:rackspace_rsyslog][:user] %>
-$FileGroup <%= node[:rackspace_rsyslog][:group] %>
+$FileOwner <%= node[:rackspace_rsyslog][:config][:user] %>
+$FileGroup <%= node[:rackspace_rsyslog][:config][:group] %>
 $FileCreateMode 0640
 $DirCreateMode 0755
 $Umask 0022
-<% if node[:rackspace_rsyslog][:priv_seperation] %>
-$PrivDropToUser <%= node[:rackspace_rsyslog][:user] %>
-$PrivDropToGroup <%= node[:rackspace_rsyslog][:group] %>
+<% if node[:rackspace_rsyslog][:config][:priv_seperation] %>
+$PrivDropToUser <%= node[:rackspace_rsyslog][:config][:user] %>
+$PrivDropToGroup <%= node[:rackspace_rsyslog][:config][:group] %>
 <% end %>
 #
-# Include all config files in <%= node[:rackspace_rsyslog][:config_prefix] %>/rsyslog.d/
+# Include all config files in <%= node[:rackspace_rsyslog][:config][:config_prefix] %>/rsyslog.d/
 #
-$IncludeConfig <%= node[:rackspace_rsyslog][:config_prefix] %>/rsyslog.d/*.conf
+$IncludeConfig <%= node[:rackspace_rsyslog][:config][:config_prefix] %>/rsyslog.d/*.conf

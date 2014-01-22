@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: rsyslog
+# Cookbook Name:: rackspace_rsyslog
 # Recipe:: server
 #
 # Copyright 2009-2013, Opscode, Inc.
@@ -19,18 +19,18 @@
 #
 
 # Manually set this attribute
-node.set[:rackspace_rsyslog][:server] = true
+node.set[:rackspace_rsyslog][:config][:server] = true
 
-include_recipe 'rsyslog::default'
+include_recipe 'rackspace_rsyslog::default'
 
-directory node[:rackspace_rsyslog][:log_dir] do
+directory node[:rackspace_rsyslog][:config][:log_dir] do
   owner    'root'
   group    'root'
   mode     '0755'
   recursive true
 end
 
-template "#{node[:rackspace_rsyslog][:config_prefix]}/rsyslog.d/35-server-per-host.conf" do
+template "#{node[:rackspace_rsyslog][:config][:config_prefix]}/rsyslog.d/35-server-per-host.conf" do
   source   '35-server-per-host.conf.erb'
   owner    'root'
   group    'root'
@@ -38,8 +38,8 @@ template "#{node[:rackspace_rsyslog][:config_prefix]}/rsyslog.d/35-server-per-ho
   notifies :restart, "service[#{node[:rackspace_rsyslog][:service_name]}]"
 end
 
-file "#{node[:rackspace_rsyslog][:config_prefix]}/rsyslog.d/remote.conf" do
+file "#{node[:rackspace_rsyslog][:config][:config_prefix]}/rsyslog.d/remote.conf" do
   action   :delete
   notifies :reload, "service[#{node[:rackspace_rsyslog][:service_name]}]"
-  only_if  { ::File.exists?("#{node[:rackspace_rsyslog][:config_prefix]}/rsyslog.d/remote.conf") }
+  only_if  { ::File.exists?("#{node[:rackspace_rsyslog][:config][:config_prefix]}/rsyslog.d/remote.conf") }
 end

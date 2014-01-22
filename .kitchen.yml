@@ -24,19 +24,21 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[rsyslog::default]
+      - recipe[rackspace_rsyslog::default]
   - name: relp
     run_list:
-      - recipe[rsyslog::default]
+      - recipe[rackspace_rsyslog::default]
     attributes:
-      rsyslog:
-        use_relp: true
+      rackspace_rsyslog:
+        config:
+          use_relp: true
   - name: client
     run_list:
-      - recipe[rsyslog::client]
+      - recipe[rackspace_rsyslog::client]
     attributes:
-      rsyslog:
-        server_ip: 10.0.0.50
+      rackspace_rsyslog:
+        config:
+          server_ip: 10.0.0.50
   - name: server
     run_list:
-      - recipe[rsyslog::server]
+      - recipe[rackspace_rsyslog::server]

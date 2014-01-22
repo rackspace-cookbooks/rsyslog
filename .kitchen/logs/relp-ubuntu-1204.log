@@ -1,0 +1,1046 @@
+I, [2014-01-22T14:28:00.365601 #29937]  INFO -- relp-ubuntu-1204: -----> Cleaning up any prior instances of <relp-ubuntu-1204>
+I, [2014-01-22T14:28:00.365704 #29937]  INFO -- relp-ubuntu-1204: -----> Destroying <relp-ubuntu-1204>...
+I, [2014-01-22T14:28:00.365881 #29937]  INFO -- relp-ubuntu-1204: Finished destroying <relp-ubuntu-1204> (0m0.00s).
+I, [2014-01-22T14:28:00.365982 #29937]  INFO -- relp-ubuntu-1204: -----> Testing <relp-ubuntu-1204>
+I, [2014-01-22T14:28:00.366049 #29937]  INFO -- relp-ubuntu-1204: -----> Creating <relp-ubuntu-1204>...
+I, [2014-01-22T14:28:01.644281 #29937]  INFO -- relp-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-01-22T14:28:02.619232 #29937]  INFO -- relp-ubuntu-1204: [default] Importing base box 'opscode-ubuntu-12.04'...
+Progress: 10%Progress: 30%Progress: 40%Progress: 50%Progress: 60%Progress: 70%Progress: 80%Progress: 90%I, [2014-01-22T14:28:08.058890 #29937]  INFO -- relp-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2014-01-22T14:28:08.436990 #29937]  INFO -- relp-ubuntu-1204: [default] Setting the name of the VM...
+I, [2014-01-22T14:28:08.501799 #29937]  INFO -- relp-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2014-01-22T14:28:08.531761 #29937]  INFO -- relp-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2014-01-22T14:28:08.603378 #29937]  INFO -- relp-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2014-01-22T14:28:08.694711 #29937]  INFO -- relp-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2014-01-22T14:28:08.738168 #29937]  INFO -- relp-ubuntu-1204: [default] Forwarding ports...
+I, [2014-01-22T14:28:08.768666 #29937]  INFO -- relp-ubuntu-1204: [default] -- 22 => 2222 (adapter 1)
+I, [2014-01-22T14:28:10.964141 #29937]  INFO -- relp-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2014-01-22T14:28:10.995597 #29937]  INFO -- relp-ubuntu-1204: [default] Booting VM...
+[default] Waiting for machine to boot. This may take a few minutes...I, [2014-01-22T14:28:27.136705 #29937]  INFO -- relp-ubuntu-1204: [default] Machine booted and ready!
+I, [2014-01-22T14:28:27.160273 #29937]  INFO -- relp-ubuntu-1204: [default] Setting hostname...
+I, [2014-01-22T14:28:34.793915 #29937]  INFO -- relp-ubuntu-1204: Vagrant instance <relp-ubuntu-1204> created.
+I, [2014-01-22T14:28:34.794474 #29937]  INFO -- relp-ubuntu-1204: Finished creating <relp-ubuntu-1204> (0m34.43s).
+I, [2014-01-22T14:28:34.794541 #29937]  INFO -- relp-ubuntu-1204: -----> Converging <relp-ubuntu-1204>...
+I, [2014-01-22T14:28:34.794818 #29937]  INFO -- relp-ubuntu-1204: Preparing files for transfer
+I, [2014-01-22T14:28:34.795077 #29937]  INFO -- relp-ubuntu-1204: Resolving cookbook dependencies with Berkshelf...
+I, [2014-01-22T14:28:34.811617 #29937]  INFO -- relp-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-01-22T14:28:34.949817 #29937]  INFO -- relp-ubuntu-1204: -----> Installing Chef Omnibus (latest)
+I, [2014-01-22T14:28:34.949889 #29937]  INFO -- relp-ubuntu-1204: downloading https://www.opscode.com/chef/install.sh
+I, [2014-01-22T14:28:34.949907 #29937]  INFO -- relp-ubuntu-1204:   to file /tmp/install.sh
+I, [2014-01-22T14:28:34.949921 #29937]  INFO -- relp-ubuntu-1204: trying wget...
+Downloading Chef  for ubuntu...I, [2014-01-22T14:28:35.230371 #29937]  INFO -- relp-ubuntu-1204: 
+downloading https://www.opscode.com/chef/metadata?v=&prerelease=false&p=ubuntu&pv=12.04&m=x86_64I, [2014-01-22T14:28:35.231123 #29937]  INFO -- relp-ubuntu-1204: 
+  to file /tmp/install.sh.1191/metadata.txtI, [2014-01-22T14:28:35.231366 #29937]  INFO -- relp-ubuntu-1204: 
+trying wget...I, [2014-01-22T14:28:35.231672 #29937]  INFO -- relp-ubuntu-1204: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-22T14:28:35.408892 #29937]  INFO -- relp-ubuntu-1204: 
+md5	3d3b3662830a44eeec71aadc098a4018I, [2014-01-22T14:28:35.409215 #29937]  INFO -- relp-ubuntu-1204: 
+sha256	a5b00a24e68e29a01c7ab9de5cdaf0cc9fd1c889599ad9af70293e5b4de8615cI, [2014-01-22T14:28:35.409487 #29937]  INFO -- relp-ubuntu-1204: 
+downloaded metadata file looks valid...I, [2014-01-22T14:28:35.410957 #29937]  INFO -- relp-ubuntu-1204: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-22T14:28:35.411619 #29937]  INFO -- relp-ubuntu-1204: 
+  to file /tmp/install.sh.1191/chef__amd64.debI, [2014-01-22T14:28:35.411819 #29937]  INFO -- relp-ubuntu-1204: 
+trying wget...I, [2014-01-22T14:28:35.411984 #29937]  INFO -- relp-ubuntu-1204: 
+Checksum compare with sha256sum succeeded.I, [2014-01-22T14:28:46.091131 #29937]  INFO -- relp-ubuntu-1204: 
+Installing Chef I, [2014-01-22T14:28:46.091772 #29937]  INFO -- relp-ubuntu-1204: 
+installing with dpkg...I, [2014-01-22T14:28:46.091991 #29937]  INFO -- relp-ubuntu-1204: 
+Selecting previously unselected package chef.I, [2014-01-22T14:28:46.119605 #29937]  INFO -- relp-ubuntu-1204: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54659 files and directories currently installed.)I, [2014-01-22T14:28:46.180785 #29937]  INFO -- relp-ubuntu-1204: 
+Unpacking chef (from .../chef__amd64.deb) ...I, [2014-01-22T14:28:46.182383 #29937]  INFO -- relp-ubuntu-1204: 
+Setting up chef (11.8.2-1.ubuntu.12.04) ...I, [2014-01-22T14:28:48.953228 #29937]  INFO -- relp-ubuntu-1204: 
+Thank you for installing Chef!I, [2014-01-22T14:28:48.965595 #29937]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T14:28:49.016625 #29937]  INFO -- relp-ubuntu-1204: Transfering files to <relp-ubuntu-1204>
+[2014-01-22T20:28:48+00:00] INFO: Forking chef instance to converge...I, [2014-01-22T14:28:50.883669 #29937]  INFO -- relp-ubuntu-1204: 
+Starting Chef Client, version 11.8.2[0mI, [2014-01-22T14:28:50.917744 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:28:48+00:00] INFO: *** Chef 11.8.2 ***I, [2014-01-22T14:28:50.918035 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:28:48+00:00] INFO: Chef-client pid: 1268I, [2014-01-22T14:28:50.918210 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:28:48+00:00] INFO: Setting the run_list to ["recipe[apt]", "recipe[rackspace_rsyslog::default]"] from JSONI, [2014-01-22T14:28:51.131533 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:28:48+00:00] INFO: Run List is [recipe[apt], recipe[rackspace_rsyslog::default]]I, [2014-01-22T14:28:51.133429 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:28:48+00:00] INFO: Run List expands to [apt, rackspace_rsyslog::default]I, [2014-01-22T14:28:51.133630 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:28:48+00:00] INFO: Starting Chef Run for relp-ubuntu-1204I, [2014-01-22T14:28:51.133806 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:28:48+00:00] INFO: Running start handlersI, [2014-01-22T14:28:51.134125 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:28:48+00:00] INFO: Start handlers complete.I, [2014-01-22T14:28:51.134386 #29937]  INFO -- relp-ubuntu-1204: 
+Compiling Cookbooks...[0mI, [2014-01-22T14:28:51.136536 #29937]  INFO -- relp-ubuntu-1204: 
+Converging 14 resources[0mI, [2014-01-22T14:28:51.141827 #29937]  INFO -- relp-ubuntu-1204: 
+Recipe: apt::default[0mI, [2014-01-22T14:28:51.142424 #29937]  INFO -- relp-ubuntu-1204: 
+  * execute[apt-get-update] action run[0m[2014-01-22T20:28:48+00:00] INFO: Processing execute[apt-get-update] action run (apt::default line 30)I, [2014-01-22T14:28:51.142773 #29937]  INFO -- relp-ubuntu-1204: 
+Get:1 http://security.ubuntu.com precise-security Release.gpg [198 B]I, [2014-01-22T14:28:51.484897 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise Release.gpgI, [2014-01-22T14:28:51.515290 #29937]  INFO -- relp-ubuntu-1204: 
+Get:2 http://security.ubuntu.com precise-security Release [49.6 kB]I, [2014-01-22T14:28:51.654800 #29937]  INFO -- relp-ubuntu-1204: 
+Get:3 http://us.archive.ubuntu.com precise-updates Release.gpg [198 B]I, [2014-01-22T14:28:51.688415 #29937]  INFO -- relp-ubuntu-1204: 
+Get:4 http://us.archive.ubuntu.com precise-backports Release.gpg [198 B]I, [2014-01-22T14:28:51.827387 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise ReleaseI, [2014-01-22T14:28:51.986036 #29937]  INFO -- relp-ubuntu-1204: 
+Get:5 http://security.ubuntu.com precise-security/main Sources [96.7 kB]I, [2014-01-22T14:28:52.076545 #29937]  INFO -- relp-ubuntu-1204: 
+Get:6 http://us.archive.ubuntu.com precise-updates Release [49.6 kB]I, [2014-01-22T14:28:52.143331 #29937]  INFO -- relp-ubuntu-1204: 
+Get:7 http://us.archive.ubuntu.com precise-backports Release [49.6 kB]I, [2014-01-22T14:28:52.432367 #29937]  INFO -- relp-ubuntu-1204: 
+Get:8 http://security.ubuntu.com precise-security/restricted Sources [2494 B]I, [2014-01-22T14:28:52.510051 #29937]  INFO -- relp-ubuntu-1204: 
+Get:9 http://security.ubuntu.com precise-security/universe Sources [30.5 kB]I, [2014-01-22T14:28:52.641677 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main SourcesI, [2014-01-22T14:28:52.668349 #29937]  INFO -- relp-ubuntu-1204: 
+Get:10 http://security.ubuntu.com precise-security/multiverse Sources [1797 B]I, [2014-01-22T14:28:52.783706 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted SourcesI, [2014-01-22T14:28:52.811399 #29937]  INFO -- relp-ubuntu-1204: 
+Get:11 http://security.ubuntu.com precise-security/main amd64 Packages [357 kB]I, [2014-01-22T14:28:52.899517 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe SourcesI, [2014-01-22T14:28:52.948458 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse SourcesI, [2014-01-22T14:28:53.097238 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main amd64 PackagesI, [2014-01-22T14:28:53.223211 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted amd64 PackagesI, [2014-01-22T14:28:53.352958 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe amd64 PackagesI, [2014-01-22T14:28:53.599960 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse amd64 PackagesI, [2014-01-22T14:28:53.726594 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main i386 PackagesI, [2014-01-22T14:28:53.863564 #29937]  INFO -- relp-ubuntu-1204: 
+Get:12 http://security.ubuntu.com precise-security/restricted amd64 Packages [4627 B]I, [2014-01-22T14:28:53.947330 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted i386 PackagesI, [2014-01-22T14:28:54.011312 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe i386 PackagesI, [2014-01-22T14:28:54.154840 #29937]  INFO -- relp-ubuntu-1204: 
+Get:13 http://security.ubuntu.com precise-security/universe amd64 Packages [90.1 kB]I, [2014-01-22T14:28:54.170135 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse i386 PackagesI, [2014-01-22T14:28:54.277906 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main TranslationIndexI, [2014-01-22T14:28:54.407536 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndexI, [2014-01-22T14:28:54.565996 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted TranslationIndexI, [2014-01-22T14:28:54.744953 #29937]  INFO -- relp-ubuntu-1204: 
+Get:14 http://security.ubuntu.com precise-security/multiverse amd64 Packages [2454 B]I, [2014-01-22T14:28:54.767918 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe TranslationIndexI, [2014-01-22T14:28:54.866542 #29937]  INFO -- relp-ubuntu-1204: 
+Get:15 http://security.ubuntu.com precise-security/main i386 Packages [377 kB]I, [2014-01-22T14:28:54.906471 #29937]  INFO -- relp-ubuntu-1204: 
+Get:16 http://us.archive.ubuntu.com precise-updates/main Sources [448 kB]I, [2014-01-22T14:28:54.997958 #29937]  INFO -- relp-ubuntu-1204: 
+Get:17 http://security.ubuntu.com precise-security/restricted i386 Packages [4620 B]I, [2014-01-22T14:28:55.897898 #29937]  INFO -- relp-ubuntu-1204: 
+Get:18 http://us.archive.ubuntu.com precise-updates/restricted Sources [7039 B]I, [2014-01-22T14:28:55.906626 #29937]  INFO -- relp-ubuntu-1204: 
+Get:19 http://us.archive.ubuntu.com precise-updates/universe Sources [101 kB]I, [2014-01-22T14:28:56.026191 #29937]  INFO -- relp-ubuntu-1204: 
+Get:20 http://security.ubuntu.com precise-security/universe i386 Packages [94.3 kB]I, [2014-01-22T14:28:56.054805 #29937]  INFO -- relp-ubuntu-1204: 
+Get:21 http://us.archive.ubuntu.com precise-updates/multiverse Sources [8486 B]I, [2014-01-22T14:28:56.282818 #29937]  INFO -- relp-ubuntu-1204: 
+Get:22 http://security.ubuntu.com precise-security/multiverse i386 Packages [2650 B]I, [2014-01-22T14:28:56.348140 #29937]  INFO -- relp-ubuntu-1204: 
+Get:23 http://us.archive.ubuntu.com precise-updates/main amd64 Packages [744 kB]I, [2014-01-22T14:28:56.421147 #29937]  INFO -- relp-ubuntu-1204: 
+Get:24 http://security.ubuntu.com precise-security/main TranslationIndex [74 B]I, [2014-01-22T14:28:56.512709 #29937]  INFO -- relp-ubuntu-1204: 
+Get:25 http://security.ubuntu.com precise-security/multiverse TranslationIndex [72 B]I, [2014-01-22T14:28:56.623215 #29937]  INFO -- relp-ubuntu-1204: 
+Get:26 http://security.ubuntu.com precise-security/restricted TranslationIndex [72 B]I, [2014-01-22T14:28:56.740885 #29937]  INFO -- relp-ubuntu-1204: 
+Get:27 http://security.ubuntu.com precise-security/universe TranslationIndex [73 B]I, [2014-01-22T14:28:56.861897 #29937]  INFO -- relp-ubuntu-1204: 
+Get:28 http://security.ubuntu.com precise-security/main Translation-en [168 kB]I, [2014-01-22T14:28:56.979508 #29937]  INFO -- relp-ubuntu-1204: 
+Get:29 http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages [11.4 kB]I, [2014-01-22T14:28:57.326294 #29937]  INFO -- relp-ubuntu-1204: 
+Get:30 http://us.archive.ubuntu.com precise-updates/universe amd64 Packages [231 kB]I, [2014-01-22T14:28:57.458063 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse Translation-enI, [2014-01-22T14:28:57.485432 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted Translation-enI, [2014-01-22T14:28:57.609726 #29937]  INFO -- relp-ubuntu-1204: 
+Get:31 http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages [14.2 kB]I, [2014-01-22T14:28:57.714538 #29937]  INFO -- relp-ubuntu-1204: 
+Get:32 http://security.ubuntu.com precise-security/universe Translation-en [56.1 kB]I, [2014-01-22T14:28:57.795532 #29937]  INFO -- relp-ubuntu-1204: 
+Get:33 http://us.archive.ubuntu.com precise-updates/main i386 Packages [768 kB]I, [2014-01-22T14:28:57.843534 #29937]  INFO -- relp-ubuntu-1204: 
+Get:34 http://us.archive.ubuntu.com precise-updates/restricted i386 Packages [11.5 kB]I, [2014-01-22T14:28:58.419195 #29937]  INFO -- relp-ubuntu-1204: 
+Get:35 http://us.archive.ubuntu.com precise-updates/universe i386 Packages [236 kB]I, [2014-01-22T14:28:58.569552 #29937]  INFO -- relp-ubuntu-1204: 
+Get:36 http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages [14.4 kB]I, [2014-01-22T14:28:58.782445 #29937]  INFO -- relp-ubuntu-1204: 
+Get:37 http://us.archive.ubuntu.com precise-updates/main TranslationIndex [3564 B]I, [2014-01-22T14:28:58.917474 #29937]  INFO -- relp-ubuntu-1204: 
+Get:38 http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex [2605 B]I, [2014-01-22T14:28:59.043299 #29937]  INFO -- relp-ubuntu-1204: 
+Get:39 http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex [2461 B]I, [2014-01-22T14:28:59.163611 #29937]  INFO -- relp-ubuntu-1204: 
+Get:40 http://us.archive.ubuntu.com precise-updates/universe TranslationIndex [2850 B]I, [2014-01-22T14:28:59.302305 #29937]  INFO -- relp-ubuntu-1204: 
+Get:41 http://us.archive.ubuntu.com precise-backports/main Sources [4226 B]I, [2014-01-22T14:28:59.432105 #29937]  INFO -- relp-ubuntu-1204: 
+Get:42 http://us.archive.ubuntu.com precise-backports/restricted Sources [14 B]I, [2014-01-22T14:28:59.553051 #29937]  INFO -- relp-ubuntu-1204: 
+Get:43 http://us.archive.ubuntu.com precise-backports/universe Sources [36.4 kB]I, [2014-01-22T14:28:59.724049 #29937]  INFO -- relp-ubuntu-1204: 
+Get:44 http://us.archive.ubuntu.com precise-backports/multiverse Sources [5311 B]I, [2014-01-22T14:28:59.846375 #29937]  INFO -- relp-ubuntu-1204: 
+Get:45 http://us.archive.ubuntu.com precise-backports/main amd64 Packages [4806 B]I, [2014-01-22T14:28:59.953313 #29937]  INFO -- relp-ubuntu-1204: 
+Get:46 http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages [14 B]I, [2014-01-22T14:29:00.131547 #29937]  INFO -- relp-ubuntu-1204: 
+Get:47 http://us.archive.ubuntu.com precise-backports/universe amd64 Packages [37.9 kB]I, [2014-01-22T14:29:00.312765 #29937]  INFO -- relp-ubuntu-1204: 
+Get:48 http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages [5206 B]I, [2014-01-22T14:29:00.483277 #29937]  INFO -- relp-ubuntu-1204: 
+Get:49 http://us.archive.ubuntu.com precise-backports/main i386 Packages [4811 B]I, [2014-01-22T14:29:00.619176 #29937]  INFO -- relp-ubuntu-1204: 
+Get:50 http://us.archive.ubuntu.com precise-backports/restricted i386 Packages [14 B]I, [2014-01-22T14:29:00.733918 #29937]  INFO -- relp-ubuntu-1204: 
+Get:51 http://us.archive.ubuntu.com precise-backports/universe i386 Packages [37.7 kB]I, [2014-01-22T14:29:00.856330 #29937]  INFO -- relp-ubuntu-1204: 
+Get:52 http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages [5178 B]I, [2014-01-22T14:29:01.089148 #29937]  INFO -- relp-ubuntu-1204: 
+Get:53 http://us.archive.ubuntu.com precise-backports/main TranslationIndex [72 B]I, [2014-01-22T14:29:01.301209 #29937]  INFO -- relp-ubuntu-1204: 
+Get:54 http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex [72 B]I, [2014-01-22T14:29:01.427197 #29937]  INFO -- relp-ubuntu-1204: 
+Get:55 http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex [70 B]I, [2014-01-22T14:29:01.566175 #29937]  INFO -- relp-ubuntu-1204: 
+Get:56 http://us.archive.ubuntu.com precise-backports/universe TranslationIndex [73 B]I, [2014-01-22T14:29:01.689793 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main Translation-enI, [2014-01-22T14:29:01.814360 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse Translation-enI, [2014-01-22T14:29:01.966807 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted Translation-enI, [2014-01-22T14:29:02.095623 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe Translation-enI, [2014-01-22T14:29:02.218649 #29937]  INFO -- relp-ubuntu-1204: 
+Get:57 http://us.archive.ubuntu.com precise-updates/main Translation-en [334 kB]I, [2014-01-22T14:29:02.354470 #29937]  INFO -- relp-ubuntu-1204: 
+Get:58 http://us.archive.ubuntu.com precise-updates/multiverse Translation-en [8293 B]I, [2014-01-22T14:29:04.024925 #29937]  INFO -- relp-ubuntu-1204: 
+Get:59 http://us.archive.ubuntu.com precise-updates/restricted Translation-en [2663 B]I, [2014-01-22T14:29:04.143668 #29937]  INFO -- relp-ubuntu-1204: 
+Get:60 http://us.archive.ubuntu.com precise-updates/universe Translation-en [135 kB]I, [2014-01-22T14:29:04.272275 #29937]  INFO -- relp-ubuntu-1204: 
+Get:61 http://us.archive.ubuntu.com precise-backports/main Translation-en [4235 B]I, [2014-01-22T14:29:04.871943 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-enI, [2014-01-22T14:29:05.100718 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-enI, [2014-01-22T14:29:05.223029 #29937]  INFO -- relp-ubuntu-1204: 
+Get:62 http://us.archive.ubuntu.com precise-backports/universe Translation-en [27.7 kB]I, [2014-01-22T14:29:05.367956 #29937]  INFO -- relp-ubuntu-1204: 
+Fetched 4699 kB in 14s (327 kB/s)I, [2014-01-22T14:29:05.529826 #29937]  INFO -- relp-ubuntu-1204: 
+Reading package lists...I, [2014-01-22T14:29:07.136285 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:05+00:00] INFO: execute[apt-get-update] ran successfullyI, [2014-01-22T14:29:07.162949 #29937]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T14:29:07.163126 #29937]  INFO -- relp-ubuntu-1204: 
+    - execute apt-get update[0mI, [2014-01-22T14:29:07.163381 #29937]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T14:29:07.163519 #29937]  INFO -- relp-ubuntu-1204: 
+  * execute[apt-get update] action nothing[0m[2014-01-22T20:29:05+00:00] INFO: Processing execute[apt-get update] action nothing (apt::default line 38)I, [2014-01-22T14:29:07.163990 #29937]  INFO -- relp-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-01-22T14:29:07.164186 #29937]  INFO -- relp-ubuntu-1204: 
+  * execute[apt-get autoremove] action nothing[0m[2014-01-22T20:29:05+00:00] INFO: Processing execute[apt-get autoremove] action nothing (apt::default line 46)I, [2014-01-22T14:29:07.164605 #29937]  INFO -- relp-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-01-22T14:29:07.164806 #29937]  INFO -- relp-ubuntu-1204: 
+  * execute[apt-get autoclean] action nothing[0m[2014-01-22T20:29:05+00:00] INFO: Processing execute[apt-get autoclean] action nothing (apt::default line 53)I, [2014-01-22T14:29:07.165199 #29937]  INFO -- relp-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-01-22T14:29:07.165354 #29937]  INFO -- relp-ubuntu-1204: 
+  * package[update-notifier-common] action install[0m[2014-01-22T20:29:05+00:00] INFO: Processing package[update-notifier-common] action install (apt::default line 60)I, [2014-01-22T14:29:07.165757 #29937]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T14:29:08.579834 #29937]  INFO -- relp-ubuntu-1204: 
+    - install version 0.119ubuntu8.6 of package update-notifier-common[0mI, [2014-01-22T14:29:08.580012 #29937]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T14:29:08.580173 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:06+00:00] INFO: package[update-notifier-common] sending run action to execute[apt-get-update] (immediate)I, [2014-01-22T14:29:08.580465 #29937]  INFO -- relp-ubuntu-1204: 
+  * execute[apt-get-update] action run[0m[2014-01-22T20:29:06+00:00] INFO: Processing execute[apt-get-update] action run (apt::default line 30)I, [2014-01-22T14:29:08.580857 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise Release.gpgI, [2014-01-22T14:29:08.900991 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security Release.gpgI, [2014-01-22T14:29:08.916988 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates Release.gpgI, [2014-01-22T14:29:09.022413 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security ReleaseI, [2014-01-22T14:29:09.033428 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports Release.gpgI, [2014-01-22T14:29:09.143191 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main SourcesI, [2014-01-22T14:29:09.143330 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise ReleaseI, [2014-01-22T14:29:09.253142 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted SourcesI, [2014-01-22T14:29:09.288791 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates ReleaseI, [2014-01-22T14:29:09.386690 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe SourcesI, [2014-01-22T14:29:09.459162 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports ReleaseI, [2014-01-22T14:29:09.511720 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse SourcesI, [2014-01-22T14:29:09.608488 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main amd64 PackagesI, [2014-01-22T14:29:09.732040 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main SourcesI, [2014-01-22T14:29:09.757004 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted amd64 PackagesI, [2014-01-22T14:29:09.893935 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted SourcesI, [2014-01-22T14:29:09.905587 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe amd64 PackagesI, [2014-01-22T14:29:10.050992 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe SourcesI, [2014-01-22T14:29:10.052317 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse SourcesI, [2014-01-22T14:29:10.203551 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse amd64 PackagesI, [2014-01-22T14:29:10.205910 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main amd64 PackagesI, [2014-01-22T14:29:10.320978 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main i386 PackagesI, [2014-01-22T14:29:10.394940 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted i386 PackagesI, [2014-01-22T14:29:10.509513 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted amd64 PackagesI, [2014-01-22T14:29:10.545752 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe i386 PackagesI, [2014-01-22T14:29:10.639847 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe amd64 PackagesI, [2014-01-22T14:29:10.700611 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse i386 PackagesI, [2014-01-22T14:29:10.794763 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse amd64 PackagesI, [2014-01-22T14:29:10.853164 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main TranslationIndexI, [2014-01-22T14:29:10.916949 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main i386 PackagesI, [2014-01-22T14:29:11.042852 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse TranslationIndexI, [2014-01-22T14:29:11.048878 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted TranslationIndexI, [2014-01-22T14:29:11.158144 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted i386 PackagesI, [2014-01-22T14:29:11.177482 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe i386 PackagesI, [2014-01-22T14:29:11.281282 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe TranslationIndexI, [2014-01-22T14:29:11.281457 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main Translation-enI, [2014-01-22T14:29:11.391579 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse i386 PackagesI, [2014-01-22T14:29:11.393727 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse Translation-enI, [2014-01-22T14:29:11.532195 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main TranslationIndexI, [2014-01-22T14:29:11.578951 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted Translation-enI, [2014-01-22T14:29:11.679839 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndexI, [2014-01-22T14:29:11.817151 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe Translation-enI, [2014-01-22T14:29:11.819246 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted TranslationIndexI, [2014-01-22T14:29:11.958855 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe TranslationIndexI, [2014-01-22T14:29:12.086034 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/main SourcesI, [2014-01-22T14:29:12.250762 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted SourcesI, [2014-01-22T14:29:12.451178 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe SourcesI, [2014-01-22T14:29:12.557006 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse SourcesI, [2014-01-22T14:29:12.704813 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/main amd64 PackagesI, [2014-01-22T14:29:12.827698 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted amd64 PackagesI, [2014-01-22T14:29:12.936210 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe amd64 PackagesI, [2014-01-22T14:29:13.080270 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse amd64 PackagesI, [2014-01-22T14:29:13.219361 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/main i386 PackagesI, [2014-01-22T14:29:13.331612 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted i386 PackagesI, [2014-01-22T14:29:13.501992 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe i386 PackagesI, [2014-01-22T14:29:13.617176 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse i386 PackagesI, [2014-01-22T14:29:13.788559 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/main TranslationIndexI, [2014-01-22T14:29:13.914297 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndexI, [2014-01-22T14:29:14.071378 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted TranslationIndexI, [2014-01-22T14:29:14.257957 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe TranslationIndexI, [2014-01-22T14:29:14.374380 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main SourcesI, [2014-01-22T14:29:14.533705 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted SourcesI, [2014-01-22T14:29:14.663307 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe SourcesI, [2014-01-22T14:29:14.814018 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse SourcesI, [2014-01-22T14:29:14.956889 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main amd64 PackagesI, [2014-01-22T14:29:15.116209 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted amd64 PackagesI, [2014-01-22T14:29:15.243689 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe amd64 PackagesI, [2014-01-22T14:29:15.387009 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse amd64 PackagesI, [2014-01-22T14:29:15.531769 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main i386 PackagesI, [2014-01-22T14:29:15.694541 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted i386 PackagesI, [2014-01-22T14:29:15.800327 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe i386 PackagesI, [2014-01-22T14:29:15.932351 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse i386 PackagesI, [2014-01-22T14:29:16.053389 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main TranslationIndexI, [2014-01-22T14:29:16.202666 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndexI, [2014-01-22T14:29:16.330586 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted TranslationIndexI, [2014-01-22T14:29:16.458785 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe TranslationIndexI, [2014-01-22T14:29:17.152234 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main Translation-enI, [2014-01-22T14:29:17.305278 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse Translation-enI, [2014-01-22T14:29:17.432873 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted Translation-enI, [2014-01-22T14:29:17.556094 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe Translation-enI, [2014-01-22T14:29:17.679003 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/main Translation-enI, [2014-01-22T14:29:17.820543 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse Translation-enI, [2014-01-22T14:29:17.974645 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted Translation-enI, [2014-01-22T14:29:18.125006 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe Translation-enI, [2014-01-22T14:29:18.284118 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main Translation-enI, [2014-01-22T14:29:18.457762 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-enI, [2014-01-22T14:29:18.604897 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-enI, [2014-01-22T14:29:18.716411 #29937]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe Translation-enI, [2014-01-22T14:29:18.853063 #29937]  INFO -- relp-ubuntu-1204: 
+Reading package lists...I, [2014-01-22T14:29:20.430252 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: execute[apt-get-update] ran successfullyI, [2014-01-22T14:29:20.441846 #29937]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T14:29:20.442157 #29937]  INFO -- relp-ubuntu-1204: 
+    - execute apt-get update[0mI, [2014-01-22T14:29:20.442304 #29937]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T14:29:20.442441 #29937]  INFO -- relp-ubuntu-1204: 
+  * execute[apt-get-update-periodic] action run[0m[2014-01-22T20:29:18+00:00] INFO: Processing execute[apt-get-update-periodic] action run (apt::default line 65)I, [2014-01-22T14:29:20.442758 #29937]  INFO -- relp-ubuntu-1204: 
+ (skipped due to only_if)[0mI, [2014-01-22T14:29:20.443031 #29937]  INFO -- relp-ubuntu-1204: 
+  * directory[/var/cache/local] action create[0m[2014-01-22T20:29:18+00:00] INFO: Processing directory[/var/cache/local] action create (apt::default line 76)I, [2014-01-22T14:29:20.443451 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: directory[/var/cache/local] created directory /var/cache/localI, [2014-01-22T14:29:20.444102 #29937]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T14:29:20.444252 #29937]  INFO -- relp-ubuntu-1204: 
+    - create new directory /var/cache/local[0m[2014-01-22T20:29:18+00:00] INFO: directory[/var/cache/local] owner changed to 0I, [2014-01-22T14:29:20.444897 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: directory[/var/cache/local] group changed to 0I, [2014-01-22T14:29:20.445206 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: directory[/var/cache/local] mode changed to 755I, [2014-01-22T14:29:20.445490 #29937]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T14:29:20.445645 #29937]  INFO -- relp-ubuntu-1204: 
+    - change mode from '' to '0755'[0m[32mI, [2014-01-22T14:29:20.445845 #29937]  INFO -- relp-ubuntu-1204: 
+    - change owner from '' to 'root'[0m[32mI, [2014-01-22T14:29:20.446039 #29937]  INFO -- relp-ubuntu-1204: 
+    - change group from '' to 'root'[0mI, [2014-01-22T14:29:20.446721 #29937]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T14:29:20.446864 #29937]  INFO -- relp-ubuntu-1204: 
+  * directory[/var/cache/local/preseeding] action create[0m[2014-01-22T20:29:18+00:00] INFO: Processing directory[/var/cache/local/preseeding] action create (apt::default line 76)I, [2014-01-22T14:29:20.447187 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: directory[/var/cache/local/preseeding] created directory /var/cache/local/preseedingI, [2014-01-22T14:29:20.447579 #29937]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T14:29:20.447794 #29937]  INFO -- relp-ubuntu-1204: 
+    - create new directory /var/cache/local/preseeding[0m[2014-01-22T20:29:18+00:00] INFO: directory[/var/cache/local/preseeding] owner changed to 0I, [2014-01-22T14:29:20.448390 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: directory[/var/cache/local/preseeding] group changed to 0I, [2014-01-22T14:29:20.448684 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: directory[/var/cache/local/preseeding] mode changed to 755I, [2014-01-22T14:29:20.448982 #29937]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T14:29:20.449211 #29937]  INFO -- relp-ubuntu-1204: 
+    - change mode from '' to '0755'[0m[32mI, [2014-01-22T14:29:20.449465 #29937]  INFO -- relp-ubuntu-1204: 
+    - change owner from '' to 'root'[0m[32mI, [2014-01-22T14:29:20.449641 #29937]  INFO -- relp-ubuntu-1204: 
+    - change group from '' to 'root'[0mI, [2014-01-22T14:29:20.449924 #29937]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T14:29:20.450063 #29937]  INFO -- relp-ubuntu-1204: 
+Recipe: rackspace_rsyslog::default[0mI, [2014-01-22T14:29:20.450229 #29937]  INFO -- relp-ubuntu-1204: 
+  * package[rsyslog] action install[0m[2014-01-22T20:29:18+00:00] INFO: Processing package[rsyslog] action install (rackspace_rsyslog::default line 21)I, [2014-01-22T14:29:20.450552 #29937]  INFO -- relp-ubuntu-1204: 
+ (up to date)[0mI, [2014-01-22T14:29:20.478680 #29937]  INFO -- relp-ubuntu-1204: 
+  * directory[/etc/rsyslog.d] action create[0m[2014-01-22T20:29:18+00:00] INFO: Processing directory[/etc/rsyslog.d] action create (rackspace_rsyslog::default line 24)I, [2014-01-22T14:29:20.478982 #29937]  INFO -- relp-ubuntu-1204: 
+ (up to date)[0mI, [2014-01-22T14:29:20.479709 #29937]  INFO -- relp-ubuntu-1204: 
+  * directory[/var/spool/rsyslog] action create[0m[2014-01-22T20:29:18+00:00] INFO: Processing directory[/var/spool/rsyslog] action create (rackspace_rsyslog::default line 30)I, [2014-01-22T14:29:20.480197 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: directory[/var/spool/rsyslog] owner changed to 0I, [2014-01-22T14:29:20.481192 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: directory[/var/spool/rsyslog] group changed to 0I, [2014-01-22T14:29:20.481543 #29937]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T14:29:20.481905 #29937]  INFO -- relp-ubuntu-1204: 
+    - change owner from 'syslog' to 'root'[0m[32mI, [2014-01-22T14:29:20.482094 #29937]  INFO -- relp-ubuntu-1204: 
+    - change group from 'adm' to 'root'[0mI, [2014-01-22T14:29:20.482403 #29937]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T14:29:20.482547 #29937]  INFO -- relp-ubuntu-1204: 
+  * template[/etc/rsyslog.conf] action create[0m[2014-01-22T20:29:18+00:00] INFO: Processing template[/etc/rsyslog.conf] action create (rackspace_rsyslog::default line 38)I, [2014-01-22T14:29:20.482902 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: template[/etc/rsyslog.conf] backed up to /tmp/kitchen/backup/etc/rsyslog.conf.chef-20140122202918.393993I, [2014-01-22T14:29:20.524874 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: template[/etc/rsyslog.conf] updated file contents /etc/rsyslog.confI, [2014-01-22T14:29:20.525592 #29937]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T14:29:20.525917 #29937]  INFO -- relp-ubuntu-1204: 
+    - update content in file /etc/rsyslog.conf from cd2113 to 92cccf[0m[37mI, [2014-01-22T14:29:20.526208 #29937]  INFO -- relp-ubuntu-1204: 
+        --- /etc/rsyslog.conf	2013-06-05 19:24:28.000000000 +0000[0m[37mI, [2014-01-22T14:29:20.526597 #29937]  INFO -- relp-ubuntu-1204: 
+        +++ /tmp/chef-rendered-template20140122-1268-jycjwa	2014-01-22 20:29:18.388383280 +0000[0m[37mI, [2014-01-22T14:29:20.526942 #29937]  INFO -- relp-ubuntu-1204: 
+        @@ -1,34 +1,32 @@[0m[37mI, [2014-01-22T14:29:20.527165 #29937]  INFO -- relp-ubuntu-1204: 
+        -#  /etc/rsyslog.conf	Configuration file for rsyslog.[0m[37mI, [2014-01-22T14:29:20.527516 #29937]  INFO -- relp-ubuntu-1204: 
+        +#  /etc/rsyslog.conf	Configuration file for rsyslog v3.[0m[37mI, [2014-01-22T14:29:20.527863 #29937]  INFO -- relp-ubuntu-1204: 
+         #[0m[37mI, [2014-01-22T14:29:20.528080 #29937]  INFO -- relp-ubuntu-1204: 
+         #			For more information see[0m[37mI, [2014-01-22T14:29:20.528613 #29937]  INFO -- relp-ubuntu-1204: 
+         #			/usr/share/doc/rsyslog-doc/html/rsyslog_conf.html[0m[37mI, [2014-01-22T14:29:20.529094 #29937]  INFO -- relp-ubuntu-1204: 
+        +[0m[37mI, [2014-01-22T14:29:20.529313 #29937]  INFO -- relp-ubuntu-1204: 
+         #[0m[37mI, [2014-01-22T14:29:20.529537 #29937]  INFO -- relp-ubuntu-1204: 
+        -#  Default logging rules can be found in /etc/rsyslog.d/50-default.conf[0m[37mI, [2014-01-22T14:29:20.529756 #29937]  INFO -- relp-ubuntu-1204: 
+        +# Set max message size[0m[37mI, [2014-01-22T14:29:20.529917 #29937]  INFO -- relp-ubuntu-1204: 
+        +#[0m[37mI, [2014-01-22T14:29:20.530093 #29937]  INFO -- relp-ubuntu-1204: 
+        +$MaxMessageSize 2k[0m[37mI, [2014-01-22T14:29:20.530277 #29937]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T14:29:20.530354 #29937]  INFO -- relp-ubuntu-1204:   [0m[37m
+I, [2014-01-22T14:29:20.530385 #29937]  INFO -- relp-ubuntu-1204:  +#[0m[37m
+I, [2014-01-22T14:29:20.530404 #29937]  INFO -- relp-ubuntu-1204:  +# Preserve FQDN[0m[37m
+I, [2014-01-22T14:29:20.530419 #29937]  INFO -- relp-ubuntu-1204:  +#[0m[37m
+I, [2014-01-22T14:29:20.530436 #29937]  INFO -- relp-ubuntu-1204:  +$PreserveFQDN off[0m[37m
+I, [2014-01-22T14:29:20.530460 #29937]  INFO -- relp-ubuntu-1204:   [0m[37m
+I, [2014-01-22T14:29:20.530597 #29937]  INFO -- relp-ubuntu-1204:   #################[0m[37m
+I, [2014-01-22T14:29:20.530621 #29937]  INFO -- relp-ubuntu-1204:   #### MODULES ####[0m[37m
+I, [2014-01-22T14:29:20.530637 #29937]  INFO -- relp-ubuntu-1204:   #################[0m[37m
+I, [2014-01-22T14:29:20.530652 #29937]  INFO -- relp-ubuntu-1204:   [0m[37m
+I, [2014-01-22T14:29:20.530667 #29937]  INFO -- relp-ubuntu-1204:  -$ModLoad imuxsock # provides support for local system logging[0m[37m
+I, [2014-01-22T14:29:20.530692 #29937]  INFO -- relp-ubuntu-1204:  -$ModLoad imklog   # provides kernel logging support (previously done by rklogd)[0m[37m
+I, [2014-01-22T14:29:20.530717 #29937]  INFO -- relp-ubuntu-1204:  -#$ModLoad immark  # provides --MARK-- message capability[0m[37m
+I, [2014-01-22T14:29:20.530731 #29937]  INFO -- relp-ubuntu-1204:  +$ModLoad imuxsock[0m[37m
+I, [2014-01-22T14:29:20.530744 #29937]  INFO -- relp-ubuntu-1204:  +$ModLoad imklog[0m[37m
+I, [2014-01-22T14:29:20.530758 #29937]  INFO -- relp-ubuntu-1204:   [0m[37m
+I, [2014-01-22T14:29:20.530774 #29937]  INFO -- relp-ubuntu-1204:  -# provides UDP syslog reception[0m[37m
+I, [2014-01-22T14:29:20.530789 #29937]  INFO -- relp-ubuntu-1204:  -#$ModLoad imudp[0m[37m
+I, [2014-01-22T14:29:20.530803 #29937]  INFO -- relp-ubuntu-1204:  -#$UDPServerRun 514[0m
+I, [2014-01-22T14:29:20.530963 #29937]  INFO -- relp-ubuntu-1204: [37m
+I, [2014-01-22T14:29:20.531000 #29937]  INFO -- relp-ubuntu-1204:   [0m[37m
+I, [2014-01-22T14:29:20.531020 #29937]  INFO -- relp-ubuntu-1204:  -# provides TCP syslog reception[0m[37m
+I, [2014-01-22T14:29:20.531045 #29937]  INFO -- relp-ubuntu-1204:  -#$ModLoad imtcp[0m[37m
+I, [2014-01-22T14:29:20.531063 #29937]  INFO -- relp-ubuntu-1204:  -#$InputTCPServerRun 514[0m[37m
+I, [2014-01-22T14:29:20.531079 #29937]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T14:29:20.531098 #29937]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T14:29:20.531120 #29937]  INFO -- relp-ubuntu-1204:   ###########################[0m[37m
+I, [2014-01-22T14:29:20.531136 #29937]  INFO -- relp-ubuntu-1204:   #### GLOBAL DIRECTIVES ####[0m[37m
+I, [2014-01-22T14:29:20.531150 #29937]  INFO -- relp-ubuntu-1204:   ###########################[0m[37m
+I, [2014-01-22T14:29:20.531165 #29937]  INFO -- relp-ubuntu-1204:   [0m[37m
+I, [2014-01-22T14:29:20.531324 #29937]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T14:29:20.531348 #29937]  INFO -- relp-ubuntu-1204:   #[0m[37m
+I, [2014-01-22T14:29:20.531366 #29937]  INFO -- relp-ubuntu-1204:  -# Use traditional timestamp format.[0m[37m
+I, [2014-01-22T14:29:20.531392 #29937]  INFO -- relp-ubuntu-1204:  +# Use default timestamp format.[0m[37m
+I, [2014-01-22T14:29:20.531410 #29937]  INFO -- relp-ubuntu-1204:   # To enable high precision timestamps, comment out the following line.[0m[37m
+I, [2014-01-22T14:29:20.531425 #29937]  INFO -- relp-ubuntu-1204:   #[0m[37m
+I, [2014-01-22T14:29:20.531450 #29937]  INFO -- relp-ubuntu-1204:   $ActionFileDefaultTemplate RSYSLOG_TraditionalFileFormat[0m[37m
+I, [2014-01-22T14:29:20.531467 #29937]  INFO -- relp-ubuntu-1204:  @@ -37,24 +35,20 @@[0m[37m
+I, [2014-01-22T14:29:20.531482 #29937]  INFO -- relp-ubuntu-1204:   $RepeatedMsgReduction on[0m[37m
+I, [2014-01-22T14:29:20.531499 #29937]  INFO -- relp-ubuntu-1204:   [0m[37m
+I, [2014-01-22T14:29:20.531518 #29937]  INFO -- relp-ubuntu-1204:   #[0m[37m
+I, [2014-01-22T14:29:20.531662 #29937]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T14:29:20.531686 #29937]  INFO -- relp-ubuntu-1204:  +# Set temporary directory to buffer syslog queue[0m[37m
+I, [2014-01-22T14:29:20.531704 #29937]  INFO -- relp-ubuntu-1204:  +#[0m[37m
+I, [2014-01-22T14:29:20.531719 #29937]  INFO -- relp-ubuntu-1204:  +$WorkDirectory /var/spool/rsyslog[0m[37m
+I, [2014-01-22T14:29:20.531733 #29937]  INFO -- relp-ubuntu-1204:  +[0m[37m
+I, [2014-01-22T14:29:20.531748 #29937]  INFO -- relp-ubuntu-1204:  +#[0m[37m
+I, [2014-01-22T14:29:20.531762 #29937]  INFO -- relp-ubuntu-1204:   # Set the default permissions for all log files.[0m[37m
+I, [2014-01-22T14:29:20.531776 #29937]  INFO -- relp-ubuntu-1204:   #[0m[37m
+I, [2014-01-22T14:29:20.531790 #29937]  INFO -- relp-ubuntu-1204:  -$FileOwner syslog[0m[37m
+I, [2014-01-22T14:29:20.531804 #29937]  INFO -- relp-ubuntu-1204:  +$FileOwner root[0m[37m
+I, [2014-01-22T14:29:20.531819 #29937]  INFO -- relp-ubuntu-1204:   $FileGroup adm[0m
+I, [2014-01-22T14:29:20.531958 #29937]  INFO -- relp-ubuntu-1204: [37m
+I, [2014-01-22T14:29:20.531981 #29937]  INFO -- relp-ubuntu-1204:   $FileCreateMode 0640[0m[37m
+I, [2014-01-22T14:29:20.531997 #29937]  INFO -- relp-ubuntu-1204:   $DirCreateMode 0755[0m[37m
+I, [2014-01-22T14:29:20.532013 #29937]  INFO -- relp-ubuntu-1204:   $Umask 0022[0m[37m
+I, [2014-01-22T14:29:20.532027 #29937]  INFO -- relp-ubuntu-1204:  -$PrivDropToUser syslog[0m[37m
+I, [2014-01-22T14:29:20.532041 #29937]  INFO -- relp-ubuntu-1204:  -$PrivDropToGroup syslog[0m[37m
+I, [2014-01-22T14:29:20.532056 #29937]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T14:29:20.532070 #29937]  INFO -- relp-ubuntu-1204:   #[0m[37m
+I, [2014-01-22T14:29:20.532085 #29937]  INFO -- relp-ubuntu-1204:  -# Where to place spool files[0m[37m
+I, [2014-01-22T14:29:20.532099 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.532218 #29937]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T14:29:20.532239 #29937]  INFO -- relp-ubuntu-1204:  -$WorkDirectory /var/spool/rsyslog[0m[37m
+I, [2014-01-22T14:29:20.532260 #29937]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T14:29:20.532275 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.532291 #29937]  INFO -- relp-ubuntu-1204:   # Include all config files in /etc/rsyslog.d/[0m[37m
+I, [2014-01-22T14:29:20.532306 #29937]  INFO -- relp-ubuntu-1204:   #[0m[37m
+I, [2014-01-22T14:29:20.532321 #29937]  INFO -- relp-ubuntu-1204:   $IncludeConfig /etc/rsyslog.d/*.conf[0m[37m
+I, [2014-01-22T14:29:20.532335 #29937]  INFO -- relp-ubuntu-1204:  -[0m
+[0mI, [2014-01-22T14:29:20.532479 #29937]  INFO -- relp-ubuntu-1204: 
+  * template[/etc/rsyslog.d/50-default.conf] action create[0m[2014-01-22T20:29:18+00:00] INFO: Processing template[/etc/rsyslog.d/50-default.conf] action create (rackspace_rsyslog::default line 46)I, [2014-01-22T14:29:20.532621 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: template[/etc/rsyslog.d/50-default.conf] backed up to /tmp/kitchen/backup/etc/rsyslog.d/50-default.conf.chef-20140122202918.403281I, [2014-01-22T14:29:20.533407 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: template[/etc/rsyslog.d/50-default.conf] updated file contents /etc/rsyslog.d/50-default.confI, [2014-01-22T14:29:20.533889 #29937]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T14:29:20.534131 #29937]  INFO -- relp-ubuntu-1204: 
+    - update content in file /etc/rsyslog.d/50-default.conf from e85a0e to 7e01d3[0m[37mI, [2014-01-22T14:29:20.534361 #29937]  INFO -- relp-ubuntu-1204: 
+        --- /etc/rsyslog.d/50-default.conf	2013-06-05 19:24:28.000000000 +0000[0m[37mI, [2014-01-22T14:29:20.534745 #29937]  INFO -- relp-ubuntu-1204: 
+        +++ /tmp/chef-rendered-template20140122-1268-5op4nn	2014-01-22 20:29:18.396387280 +0000[0m[37mI, [2014-01-22T14:29:20.535068 #29937]  INFO -- relp-ubuntu-1204: 
+        @@ -1,69 +1,20 @@[0m[37mI, [2014-01-22T14:29:20.535258 #29937]  INFO -- relp-ubuntu-1204: 
+        -#  Default rules for rsyslog.[0m[37mI, [2014-01-22T14:29:20.535470 #29937]  INFO -- relp-ubuntu-1204: 
+        -#[0m[37mI, [2014-01-22T14:29:20.535666 #29937]  INFO -- relp-ubuntu-1204: 
+        -#			For more information see rsyslog.conf(5) and /etc/rsyslog.conf[0m[37mI, [2014-01-22T14:29:20.536064 #29937]  INFO -- relp-ubuntu-1204: 
+        +# Generated by Chef for relp-ubuntu-1204.vagrantup.com[0m[37mI, [2014-01-22T14:29:20.536249 #29937]  INFO -- relp-ubuntu-1204: 
+        +# For more information see rsyslog.conf(5) and /etc/rsyslog.conf[0m[37mI, [2014-01-22T14:29:20.536442 #29937]  INFO -- relp-ubuntu-1204: 
+         [0m[37mI, [2014-01-22T14:29:20.536659 #29937]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T14:29:20.536684 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.536790 #29937]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T14:29:20.536814 #29937]  INFO -- relp-ubuntu-1204:  -# First some standard log files.  Log by facility.[0m[37m
+I, [2014-01-22T14:29:20.536832 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.536847 #29937]  INFO -- relp-ubuntu-1204:  -auth,authpriv.*			/var/log/auth.log[0m[37m
+I, [2014-01-22T14:29:20.536862 #29937]  INFO -- relp-ubuntu-1204:  -*.*;auth,authpriv.none		-/var/log/syslog[0m[37m
+I, [2014-01-22T14:29:20.536877 #29937]  INFO -- relp-ubuntu-1204:  -#cron.*				/var/log/cron.log[0m[37m
+I, [2014-01-22T14:29:20.536891 #29937]  INFO -- relp-ubuntu-1204:  -#daemon.*			-/var/log/daemon.log[0m[37m
+I, [2014-01-22T14:29:20.537059 #29937]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T14:29:20.537083 #29937]  INFO -- relp-ubuntu-1204:  -kern.*				-/var/log/kern.log[0m[37m
+I, [2014-01-22T14:29:20.537099 #29937]  INFO -- relp-ubuntu-1204:  -#lpr.*				-/var/log/lpr.log[0m[37m
+I, [2014-01-22T14:29:20.537114 #29937]  INFO -- relp-ubuntu-1204:  -mail.*				-/var/log/mail.log[0m[37m
+I, [2014-01-22T14:29:20.537129 #29937]  INFO -- relp-ubuntu-1204:  -#user.*				-/var/log/user.log[0m[37m
+I, [2014-01-22T14:29:20.537149 #29937]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T14:29:20.537165 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.537180 #29937]  INFO -- relp-ubuntu-1204:  -# Logging for the mail system.  Split it up so that[0m[37m
+I, [2014-01-22T14:29:20.537455 #29937]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T14:29:20.537480 #29937]  INFO -- relp-ubuntu-1204:  -# it is easy to write scripts to parse these files.[0m[37m
+I, [2014-01-22T14:29:20.537496 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.537512 #29937]  INFO -- relp-ubuntu-1204:  -#mail.info			-/var/log/mail.info[0m[37m
+I, [2014-01-22T14:29:20.537526 #29937]  INFO -- relp-ubuntu-1204:  -#mail.warn			-/var/log/mail.warn[0m[37m
+I, [2014-01-22T14:29:20.537541 #29937]  INFO -- relp-ubuntu-1204:  -mail.err			/var/log/mail.err[0m[37m
+I, [2014-01-22T14:29:20.537555 #29937]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T14:29:20.537569 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.537584 #29937]  INFO -- relp-ubuntu-1204:  -# Logging for INN news system.[0m[37m
+I, [2014-01-22T14:29:20.537599 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.537613 #29937]  INFO -- relp-ubuntu-1204:  -news.crit			/var/log/news/news.crit[0m[37m
+I, [2014-01-22T14:29:20.537627 #29937]  INFO -- relp-ubuntu-1204:  -news.err			/var/log/news/news.err[0m[37m
+I, [2014-01-22T14:29:20.537641 #29937]  INFO -- relp-ubuntu-1204:  -news.notice			-/var/log/news/news.notice[0m[37m
+I, [2014-01-22T14:29:20.537655 #29937]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T14:29:20.537669 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.537684 #29937]  INFO -- relp-ubuntu-1204:  -# Some "catch-all" log files.[0m[37m
+I, [2014-01-22T14:29:20.537698 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.537712 #29937]  INFO -- relp-ubuntu-1204:  -#*.=debug;\[0m[37m
+I, [2014-01-22T14:29:20.537726 #29937]  INFO -- relp-ubuntu-1204:  -#	auth,authpriv.none;\[0m[37m
+I, [2014-01-22T14:29:20.537740 #29937]  INFO -- relp-ubuntu-1204:  -#	news.none;mail.none	
+I, [2014-01-22T14:29:20.538053 #29937]  INFO -- relp-ubuntu-1204: -/var/log/debug[0m[37m
+I, [2014-01-22T14:29:20.538077 #29937]  INFO -- relp-ubuntu-1204:  -#*.=info;*.=notice;*.=warn;\[0m[37m
+I, [2014-01-22T14:29:20.538094 #29937]  INFO -- relp-ubuntu-1204:  -#	auth,authpriv.none;\[0m[37m
+I, [2014-01-22T14:29:20.538109 #29937]  INFO -- relp-ubuntu-1204:  -#	cron,daemon.none;\[0m[37m
+I, [2014-01-22T14:29:20.538123 #29937]  INFO -- relp-ubuntu-1204:  -#	mail,news.none		-/var/log/messages[0m[37m
+I, [2014-01-22T14:29:20.538137 #29937]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T14:29:20.538152 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.538166 #29937]  INFO -- relp-ubuntu-1204:  -# Emergencies are sent to everybody logged in.[0m[37m
+I, [2014-01-22T14:29:20.538180 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.538195 #29937]  INFO -- relp-ubuntu-1204:  -*.emerg                                :omusrmsg:*[0m[37m
+I, [2014-01-22T14:29:20.538209 #29937]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T14:29:20.538224 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.576557 #29937]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T14:29:20.576643 #29937]  INFO -- relp-ubuntu-1204:  -# I like to have messages displayed on the console, but only on a virtual[0m[37m
+I, [2014-01-22T14:29:20.576661 #29937]  INFO -- relp-ubuntu-1204:  -# console I usually leave idle.[0m[37m
+I, [2014-01-22T14:29:20.576676 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.576690 #29937]  INFO -- relp-ubuntu-1204:  -#daemon,mail.*;\[0m[37m
+I, [2014-01-22T14:29:20.576704 #29937]  INFO -- relp-ubuntu-1204:  -#	news.=crit;news.=err;news.=notice;\[0m[37m
+I, [2014-01-22T14:29:20.576718 #29937]  INFO -- relp-ubuntu-1204:  -#	*.=debug;*.=info;\[0m[37m
+I, [2014-01-22T14:29:20.576740 #29937]  INFO -- relp-ubuntu-1204:  -#	*.=notice;*.=warn	/dev/tty8[0m[37m
+I, [2014-01-22T14:29:20.576755 #29937]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T14:29:20.576770 #29937]  INFO -- relp-ubuntu-1204:  -# The named pipe /dev/xconsole is for the `xconsole' utility.  To use it,[0m[37m
+I, [2014-01-22T14:29:20.576784 #29937]  INFO -- relp-ubuntu-1204:  -# you must invoke `xconsole' with the `-file' option:[0m[37m
+I, [2014-01-22T14:29:20.576798 #29937]  INFO -- relp-ubuntu-1204:  -# [0m[37m
+I, [2014-01-22T14:29:20.576812 #29937]  INFO -- relp-ubuntu-1204:  -#    $ xconsole -file /dev/xconsole [...][0m[37m
+I, [2014-01-22T14:29:20.576826 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.576840 #29937]  INFO -- relp-ubuntu-1204:  -# NOTE: adjust the list below, or you'll go crazy if you have a reasonably[0m[37m
+I, [2014-01-22T14:29:20.576854 #29937]  INFO -- relp-ubuntu-1204:  -#      busy site..[0m[37m
+I, [2014-01-22T14:29:20.576867 #29937]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T14:29:20.576882 #29937]  INFO -- relp-ubuntu-1204:  -daemon.*;mail.*;\[0m[37m
+I, [2014-01-22T14:29:20.576895 #29937]  INFO -- relp-ubuntu-1204:  -	news.err;\[0m[37m
+I, [2014-01-22T14:29:20.576909 #29937]  INFO -- relp-ubuntu-1204:  -	*.=debug;*.=info;\[0m[37m
+I, [2014-01-22T14:29:20.576922 #29937]  INFO -- relp-ubuntu-1204:  -	*.=notice;*.=warn	|/dev/xconsole[0m[37m
+I, [2014-01-22T14:29:20.576936 #29937]  INFO -- relp-ubuntu-1204:  +auth,authpriv.*    /var/log/auth.log[0m[37m
+I, [2014-01-22T14:29:20.576950 #29937]  INFO -- relp-ubuntu-1204:  +*.*;auth,authpriv.none    -/var/log/syslog[0m[37m
+I, [2014-01-22T14:29:20.576964 #29937]  INFO -- relp-ubuntu-1204:  +daemon.*    -/var/log/daemon.log[0m[37m
+I, [2014-01-22T14:29:20.576978 #29937]  INFO -- relp-ubuntu-1204:  +kern.*    -/var/log/kern.log[0m[37m
+I, [2014-01-22T14:29:20.576991 #29937]  INFO -- relp-ubuntu-1204:  +mail.*    -/var/log/mail.log[0m[37m
+I, [2014-01-22T14:29:20.577005 #29937]  INFO -- relp-ubuntu-1204:  +user.*    -/var/log/user.log[0m[37m
+I, [2014-01-22T14:29:20.577019 #29937]  INFO -- relp-ubuntu-1204:  +mail.info    -/var/log/mail.info[0m[37m
+I, [2014-01-22T14:29:20.577033 #29937]  INFO -- relp-ubuntu-1204:  +mail.warn    -/var/log/mail.warn[0m[37m
+I, [2014-01-22T14:29:20.577047 #29937]  INFO -- relp-ubuntu-1204:  +mail.err    /var/log/mail.err[0m[37m
+I, [2014-01-22T14:29:20.577060 #29937]  INFO -- relp-ubuntu-1204:  +news.crit    /var/log/news/news.crit[0m[37m
+I, [2014-01-22T14:29:20.577074 #29937]  INFO -- relp-ubuntu-1204:  +news.err    /var/log/news/news.err[0m[37m
+I, [2014-01-22T14:29:20.577088 #29937]  INFO -- relp-ubuntu-1204:  +news.notice    -/var/log/news/news.notice[0m[37m
+I, [2014-01-22T14:29:20.577102 #29937]  INFO -- relp-ubuntu-1204:  +*.=debug;auth,authpriv.none;news.none;mail.none    -/var/log/debug[0m[37m
+I, [2014-01-22T14:29:20.577116 #29937]  INFO -- relp-ubuntu-1204:  +*.=info;*.=notice;*.=warn;auth,authpriv.none;cron,daemon.none;mail,news.none    -/var/log/messages[0m[37m
+I, [2014-01-22T14:29:20.577129 #29937]  INFO -- relp-ubuntu-1204:  +*.emerg    *[0m[37m
+I, [2014-01-22T14:29:20.577155 #29937]  INFO -- relp-ubuntu-1204:  +daemon.*;mail.*;news.err;*.=debug;*.=info;*.=notice;*.=warn    |/dev/xconsole[0m
+I, [2014-01-22T14:29:20.577668 #29937]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T14:29:20.577815 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: template[/etc/rsyslog.d/50-default.conf] not queuing delayed action restart on service[rsyslog] (delayed), as it's already been queuedI, [2014-01-22T14:29:20.577930 #29937]  INFO -- relp-ubuntu-1204: 
+  * service[rsyslog] action enable[0m[2014-01-22T20:29:18+00:00] INFO: Processing service[rsyslog] action enable (rackspace_rsyslog::default line 54)I, [2014-01-22T14:29:20.578085 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: service[rsyslog] enabledI, [2014-01-22T14:29:20.607673 #29937]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T14:29:20.607865 #29937]  INFO -- relp-ubuntu-1204: 
+    - enable service service[rsyslog][0mI, [2014-01-22T14:29:20.608006 #29937]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T14:29:20.608143 #29937]  INFO -- relp-ubuntu-1204: 
+  * service[rsyslog] action start[0m[2014-01-22T20:29:18+00:00] INFO: Processing service[rsyslog] action start (rackspace_rsyslog::default line 54)I, [2014-01-22T14:29:20.608334 #29937]  INFO -- relp-ubuntu-1204: 
+ (up to date)[0mI, [2014-01-22T14:29:20.638429 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: template[/etc/rsyslog.conf] sending restart action to service[rsyslog] (delayed)I, [2014-01-22T14:29:20.638713 #29937]  INFO -- relp-ubuntu-1204: 
+  * service[rsyslog] action restart[0m[2014-01-22T20:29:18+00:00] INFO: Processing service[rsyslog] action restart (rackspace_rsyslog::default line 54)I, [2014-01-22T14:29:20.639010 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: service[rsyslog] restartedI, [2014-01-22T14:29:20.706783 #29937]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T14:29:20.707054 #29937]  INFO -- relp-ubuntu-1204: 
+    - restart service service[rsyslog][0mI, [2014-01-22T14:29:20.707266 #29937]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T14:29:20.707464 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: Chef Run complete in 29.588725384 secondsI, [2014-01-22T14:29:20.707614 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: Running report handlersI, [2014-01-22T14:29:20.707754 #29937]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T20:29:18+00:00] INFO: Report handlers completeI, [2014-01-22T14:29:20.707916 #29937]  INFO -- relp-ubuntu-1204: 
+Chef Client finished, 10 resources updated[0mI, [2014-01-22T14:29:20.708080 #29937]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T14:29:20.758202 #29937]  INFO -- relp-ubuntu-1204: Finished converging <relp-ubuntu-1204> (0m45.96s).
+I, [2014-01-22T14:29:20.758333 #29937]  INFO -- relp-ubuntu-1204: -----> Setting up <relp-ubuntu-1204>...
+I, [2014-01-22T14:29:20.760010 #29937]  INFO -- relp-ubuntu-1204: Finished setting up <relp-ubuntu-1204> (0m0.00s).
+I, [2014-01-22T14:29:20.760079 #29937]  INFO -- relp-ubuntu-1204: -----> Verifying <relp-ubuntu-1204>...
+I, [2014-01-22T14:29:20.760507 #29937]  INFO -- relp-ubuntu-1204: Finished verifying <relp-ubuntu-1204> (0m0.00s).
+I, [2014-01-22T14:29:20.760699 #29937]  INFO -- relp-ubuntu-1204: -----> Destroying <relp-ubuntu-1204>...
+I, [2014-01-22T14:29:23.411686 #29937]  INFO -- relp-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2014-01-22T14:29:24.676928 #29937]  INFO -- relp-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2014-01-22T14:29:25.119693 #29937]  INFO -- relp-ubuntu-1204: Vagrant instance <relp-ubuntu-1204> destroyed.
+I, [2014-01-22T14:29:25.120229 #29937]  INFO -- relp-ubuntu-1204: Finished destroying <relp-ubuntu-1204> (0m4.36s).
+I, [2014-01-22T14:29:25.120424 #29937]  INFO -- relp-ubuntu-1204: Finished testing <relp-ubuntu-1204> (1m24.75s).
+I, [2014-01-22T15:07:07.543435 #10484]  INFO -- relp-ubuntu-1204: -----> Cleaning up any prior instances of <relp-ubuntu-1204>
+I, [2014-01-22T15:07:07.543495 #10484]  INFO -- relp-ubuntu-1204: -----> Destroying <relp-ubuntu-1204>...
+I, [2014-01-22T15:07:07.543647 #10484]  INFO -- relp-ubuntu-1204: Finished destroying <relp-ubuntu-1204> (0m0.00s).
+I, [2014-01-22T15:07:07.543723 #10484]  INFO -- relp-ubuntu-1204: -----> Testing <relp-ubuntu-1204>
+I, [2014-01-22T15:07:07.543774 #10484]  INFO -- relp-ubuntu-1204: -----> Creating <relp-ubuntu-1204>...
+I, [2014-01-22T15:07:09.069135 #10484]  INFO -- relp-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-01-22T15:07:10.105553 #10484]  INFO -- relp-ubuntu-1204: [default] Importing base box 'opscode-ubuntu-12.04'...
+Progress: 10%Progress: 30%Progress: 40%Progress: 50%Progress: 60%Progress: 70%Progress: 80%Progress: 90%I, [2014-01-22T15:07:16.129134 #10484]  INFO -- relp-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2014-01-22T15:07:16.528825 #10484]  INFO -- relp-ubuntu-1204: [default] Setting the name of the VM...
+I, [2014-01-22T15:07:16.575250 #10484]  INFO -- relp-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2014-01-22T15:07:16.606167 #10484]  INFO -- relp-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2014-01-22T15:07:16.691166 #10484]  INFO -- relp-ubuntu-1204: [default] Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2014-01-22T15:07:16.773726 #10484]  INFO -- relp-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2014-01-22T15:07:16.806611 #10484]  INFO -- relp-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2014-01-22T15:07:16.839431 #10484]  INFO -- relp-ubuntu-1204: [default] Forwarding ports...
+I, [2014-01-22T15:07:16.871429 #10484]  INFO -- relp-ubuntu-1204: [default] -- 22 => 2200 (adapter 1)
+I, [2014-01-22T15:07:19.052167 #10484]  INFO -- relp-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2014-01-22T15:07:19.094350 #10484]  INFO -- relp-ubuntu-1204: [default] Booting VM...
+I, [2014-01-22T15:07:19.228649 #10484]  INFO -- relp-ubuntu-1204: [default] Waiting for machine to boot. This may take a few minutes...
+I, [2014-01-22T15:07:35.233308 #10484]  INFO -- relp-ubuntu-1204: [default] Machine booted and ready!
+I, [2014-01-22T15:07:35.263749 #10484]  INFO -- relp-ubuntu-1204: [default] Setting hostname...
+I, [2014-01-22T15:07:40.690944 #10484]  INFO -- relp-ubuntu-1204: Vagrant instance <relp-ubuntu-1204> created.
+I, [2014-01-22T15:07:40.691578 #10484]  INFO -- relp-ubuntu-1204: Finished creating <relp-ubuntu-1204> (0m33.15s).
+I, [2014-01-22T15:07:40.691697 #10484]  INFO -- relp-ubuntu-1204: -----> Converging <relp-ubuntu-1204>...
+I, [2014-01-22T15:07:40.692193 #10484]  INFO -- relp-ubuntu-1204: Preparing files for transfer
+I, [2014-01-22T15:07:40.692531 #10484]  INFO -- relp-ubuntu-1204: Resolving cookbook dependencies with Berkshelf...
+I, [2014-01-22T15:07:40.712542 #10484]  INFO -- relp-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-01-22T15:07:40.856412 #10484]  INFO -- relp-ubuntu-1204: -----> Installing Chef Omnibus (latest)
+I, [2014-01-22T15:07:40.856484 #10484]  INFO -- relp-ubuntu-1204: downloading https://www.opscode.com/chef/install.sh
+I, [2014-01-22T15:07:40.856501 #10484]  INFO -- relp-ubuntu-1204:   to file /tmp/install.sh
+I, [2014-01-22T15:07:40.856517 #10484]  INFO -- relp-ubuntu-1204: trying wget...
+Downloading Chef  for ubuntu...I, [2014-01-22T15:07:41.083471 #10484]  INFO -- relp-ubuntu-1204: 
+downloading https://www.opscode.com/chef/metadata?v=&prerelease=false&p=ubuntu&pv=12.04&m=x86_64I, [2014-01-22T15:07:41.084332 #10484]  INFO -- relp-ubuntu-1204: 
+  to file /tmp/install.sh.1175/metadata.txtI, [2014-01-22T15:07:41.084502 #10484]  INFO -- relp-ubuntu-1204: 
+trying wget...I, [2014-01-22T15:07:41.084670 #10484]  INFO -- relp-ubuntu-1204: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-22T15:07:41.318516 #10484]  INFO -- relp-ubuntu-1204: 
+md5	3d3b3662830a44eeec71aadc098a4018I, [2014-01-22T15:07:41.318766 #10484]  INFO -- relp-ubuntu-1204: 
+sha256	a5b00a24e68e29a01c7ab9de5cdaf0cc9fd1c889599ad9af70293e5b4de8615cI, [2014-01-22T15:07:41.319039 #10484]  INFO -- relp-ubuntu-1204: 
+downloaded metadata file looks valid...I, [2014-01-22T15:07:41.319520 #10484]  INFO -- relp-ubuntu-1204: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-22T15:07:41.320173 #10484]  INFO -- relp-ubuntu-1204: 
+  to file /tmp/install.sh.1175/chef__amd64.debI, [2014-01-22T15:07:41.320336 #10484]  INFO -- relp-ubuntu-1204: 
+trying wget...I, [2014-01-22T15:07:41.320484 #10484]  INFO -- relp-ubuntu-1204: 
+Checksum compare with sha256sum succeeded.I, [2014-01-22T15:08:06.171830 #10484]  INFO -- relp-ubuntu-1204: 
+Installing Chef I, [2014-01-22T15:08:06.172475 #10484]  INFO -- relp-ubuntu-1204: 
+installing with dpkg...I, [2014-01-22T15:08:06.172662 #10484]  INFO -- relp-ubuntu-1204: 
+Selecting previously unselected package chef.I, [2014-01-22T15:08:06.200632 #10484]  INFO -- relp-ubuntu-1204: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54659 files and directories currently installed.)I, [2014-01-22T15:08:06.267861 #10484]  INFO -- relp-ubuntu-1204: 
+Unpacking chef (from .../chef__amd64.deb) ...I, [2014-01-22T15:08:06.269473 #10484]  INFO -- relp-ubuntu-1204: 
+Setting up chef (11.8.2-1.ubuntu.12.04) ...I, [2014-01-22T15:08:09.150930 #10484]  INFO -- relp-ubuntu-1204: 
+Thank you for installing Chef!I, [2014-01-22T15:08:09.165540 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:09.219718 #10484]  INFO -- relp-ubuntu-1204: Transfering files to <relp-ubuntu-1204>
+[2014-01-22T21:08:08+00:00] INFO: Forking chef instance to converge...I, [2014-01-22T15:08:11.139055 #10484]  INFO -- relp-ubuntu-1204: 
+Starting Chef Client, version 11.8.2[0mI, [2014-01-22T15:08:11.177395 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:08+00:00] INFO: *** Chef 11.8.2 ***I, [2014-01-22T15:08:11.177633 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:08+00:00] INFO: Chef-client pid: 1251I, [2014-01-22T15:08:11.177818 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:09+00:00] INFO: Setting the run_list to ["recipe[apt]", "recipe[rackspace_rsyslog::default]"] from JSONI, [2014-01-22T15:08:11.405299 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:09+00:00] INFO: Run List is [recipe[apt], recipe[rackspace_rsyslog::default]]I, [2014-01-22T15:08:11.407399 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:09+00:00] INFO: Run List expands to [apt, rackspace_rsyslog::default]I, [2014-01-22T15:08:11.407622 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:09+00:00] INFO: Starting Chef Run for relp-ubuntu-1204I, [2014-01-22T15:08:11.407932 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:09+00:00] INFO: Running start handlersI, [2014-01-22T15:08:11.408208 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:09+00:00] INFO: Start handlers complete.I, [2014-01-22T15:08:11.408484 #10484]  INFO -- relp-ubuntu-1204: 
+Compiling Cookbooks...[0mI, [2014-01-22T15:08:11.410668 #10484]  INFO -- relp-ubuntu-1204: 
+Converging 15 resources[0mI, [2014-01-22T15:08:11.416890 #10484]  INFO -- relp-ubuntu-1204: 
+Recipe: apt::default[0mI, [2014-01-22T15:08:11.417512 #10484]  INFO -- relp-ubuntu-1204: 
+  * execute[apt-get-update] action run[0m[2014-01-22T21:08:09+00:00] INFO: Processing execute[apt-get-update] action run (apt::default line 30)I, [2014-01-22T15:08:11.417948 #10484]  INFO -- relp-ubuntu-1204: 
+Get:1 http://security.ubuntu.com precise-security Release.gpg [198 B]I, [2014-01-22T15:08:11.791071 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise Release.gpgI, [2014-01-22T15:08:11.791944 #10484]  INFO -- relp-ubuntu-1204: 
+Get:2 http://us.archive.ubuntu.com precise-updates Release.gpg [198 B]I, [2014-01-22T15:08:11.923427 #10484]  INFO -- relp-ubuntu-1204: 
+Get:3 http://security.ubuntu.com precise-security Release [49.6 kB]I, [2014-01-22T15:08:12.018681 #10484]  INFO -- relp-ubuntu-1204: 
+Get:4 http://us.archive.ubuntu.com precise-backports Release.gpg [198 B]I, [2014-01-22T15:08:12.083882 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise ReleaseI, [2014-01-22T15:08:12.198667 #10484]  INFO -- relp-ubuntu-1204: 
+Get:5 http://security.ubuntu.com precise-security/main Sources [96.7 kB]I, [2014-01-22T15:08:12.361912 #10484]  INFO -- relp-ubuntu-1204: 
+Get:6 http://us.archive.ubuntu.com precise-updates Release [49.6 kB]I, [2014-01-22T15:08:12.383115 #10484]  INFO -- relp-ubuntu-1204: 
+Get:7 http://us.archive.ubuntu.com precise-backports Release [49.6 kB]I, [2014-01-22T15:08:12.653295 #10484]  INFO -- relp-ubuntu-1204: 
+Get:8 http://security.ubuntu.com precise-security/restricted Sources [2494 B]I, [2014-01-22T15:08:12.844680 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main SourcesI, [2014-01-22T15:08:12.923740 #10484]  INFO -- relp-ubuntu-1204: 
+Get:9 http://security.ubuntu.com precise-security/universe Sources [30.5 kB]I, [2014-01-22T15:08:12.995933 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted SourcesI, [2014-01-22T15:08:13.056326 #10484]  INFO -- relp-ubuntu-1204: 
+Get:10 http://security.ubuntu.com precise-security/multiverse Sources [1797 B]I, [2014-01-22T15:08:13.164088 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe SourcesI, [2014-01-22T15:08:13.172101 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse SourcesI, [2014-01-22T15:08:13.315826 #10484]  INFO -- relp-ubuntu-1204: 
+Get:11 http://security.ubuntu.com precise-security/main amd64 Packages [357 kB]I, [2014-01-22T15:08:13.361367 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main amd64 PackagesI, [2014-01-22T15:08:13.433735 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted amd64 PackagesI, [2014-01-22T15:08:13.585975 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe amd64 PackagesI, [2014-01-22T15:08:13.732581 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse amd64 PackagesI, [2014-01-22T15:08:13.870755 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main i386 PackagesI, [2014-01-22T15:08:13.980807 #10484]  INFO -- relp-ubuntu-1204: 
+Get:12 http://security.ubuntu.com precise-security/restricted amd64 Packages [4627 B]I, [2014-01-22T15:08:14.000905 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted i386 PackagesI, [2014-01-22T15:08:14.117289 #10484]  INFO -- relp-ubuntu-1204: 
+Get:13 http://security.ubuntu.com precise-security/universe amd64 Packages [90.1 kB]I, [2014-01-22T15:08:14.193686 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe i386 PackagesI, [2014-01-22T15:08:14.267344 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse i386 PackagesI, [2014-01-22T15:08:14.387691 #10484]  INFO -- relp-ubuntu-1204: 
+Get:14 http://security.ubuntu.com precise-security/multiverse amd64 Packages [2454 B]I, [2014-01-22T15:08:14.405874 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main TranslationIndexI, [2014-01-22T15:08:14.514454 #10484]  INFO -- relp-ubuntu-1204: 
+Get:15 http://security.ubuntu.com precise-security/main i386 Packages [377 kB]I, [2014-01-22T15:08:14.605350 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndexI, [2014-01-22T15:08:14.702222 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted TranslationIndexI, [2014-01-22T15:08:14.825162 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe TranslationIndexI, [2014-01-22T15:08:15.010791 #10484]  INFO -- relp-ubuntu-1204: 
+Get:16 http://security.ubuntu.com precise-security/restricted i386 Packages [4620 B]I, [2014-01-22T15:08:15.053633 #10484]  INFO -- relp-ubuntu-1204: 
+Get:17 http://us.archive.ubuntu.com precise-updates/main Sources [448 kB]I, [2014-01-22T15:08:15.196703 #10484]  INFO -- relp-ubuntu-1204: 
+Get:18 http://security.ubuntu.com precise-security/universe i386 Packages [94.3 kB]I, [2014-01-22T15:08:15.257856 #10484]  INFO -- relp-ubuntu-1204: 
+Get:19 http://security.ubuntu.com precise-security/multiverse i386 Packages [2650 B]I, [2014-01-22T15:08:15.474748 #10484]  INFO -- relp-ubuntu-1204: 
+Get:20 http://security.ubuntu.com precise-security/main TranslationIndex [74 B]I, [2014-01-22T15:08:15.652175 #10484]  INFO -- relp-ubuntu-1204: 
+Get:21 http://security.ubuntu.com precise-security/multiverse TranslationIndex [72 B]I, [2014-01-22T15:08:15.789692 #10484]  INFO -- relp-ubuntu-1204: 
+Get:22 http://security.ubuntu.com precise-security/restricted TranslationIndex [72 B]I, [2014-01-22T15:08:15.974762 #10484]  INFO -- relp-ubuntu-1204: 
+Get:23 http://security.ubuntu.com precise-security/universe TranslationIndex [73 B]I, [2014-01-22T15:08:16.119632 #10484]  INFO -- relp-ubuntu-1204: 
+Get:24 http://security.ubuntu.com precise-security/main Translation-en [168 kB]I, [2014-01-22T15:08:16.275202 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse Translation-enI, [2014-01-22T15:08:16.610218 #10484]  INFO -- relp-ubuntu-1204: 
+Get:25 http://us.archive.ubuntu.com precise-updates/restricted Sources [7039 B]I, [2014-01-22T15:08:16.683039 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted Translation-enI, [2014-01-22T15:08:16.773731 #10484]  INFO -- relp-ubuntu-1204: 
+Get:26 http://us.archive.ubuntu.com precise-updates/universe Sources [101 kB]I, [2014-01-22T15:08:16.827783 #10484]  INFO -- relp-ubuntu-1204: 
+Get:27 http://security.ubuntu.com precise-security/universe Translation-en [56.1 kB]I, [2014-01-22T15:08:16.974798 #10484]  INFO -- relp-ubuntu-1204: 
+Get:28 http://us.archive.ubuntu.com precise-updates/multiverse Sources [8486 B]I, [2014-01-22T15:08:17.103320 #10484]  INFO -- relp-ubuntu-1204: 
+Get:29 http://us.archive.ubuntu.com precise-updates/main amd64 Packages [744 kB]I, [2014-01-22T15:08:17.230810 #10484]  INFO -- relp-ubuntu-1204: 
+Get:30 http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages [11.4 kB]I, [2014-01-22T15:08:19.024260 #10484]  INFO -- relp-ubuntu-1204: 
+Get:31 http://us.archive.ubuntu.com precise-updates/universe amd64 Packages [231 kB]I, [2014-01-22T15:08:19.185337 #10484]  INFO -- relp-ubuntu-1204: 
+Get:32 http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages [14.2 kB]I, [2014-01-22T15:08:19.935154 #10484]  INFO -- relp-ubuntu-1204: 
+Get:33 http://us.archive.ubuntu.com precise-updates/main i386 Packages [768 kB]I, [2014-01-22T15:08:20.047050 #10484]  INFO -- relp-ubuntu-1204: 
+Get:34 http://us.archive.ubuntu.com precise-updates/restricted i386 Packages [11.5 kB]I, [2014-01-22T15:08:21.688601 #10484]  INFO -- relp-ubuntu-1204: 
+Get:35 http://us.archive.ubuntu.com precise-updates/universe i386 Packages [236 kB]I, [2014-01-22T15:08:21.825210 #10484]  INFO -- relp-ubuntu-1204: 
+Get:36 http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages [14.4 kB]I, [2014-01-22T15:08:22.283613 #10484]  INFO -- relp-ubuntu-1204: 
+Get:37 http://us.archive.ubuntu.com precise-updates/main TranslationIndex [3564 B]I, [2014-01-22T15:08:22.407303 #10484]  INFO -- relp-ubuntu-1204: 
+Get:38 http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex [2605 B]I, [2014-01-22T15:08:22.542860 #10484]  INFO -- relp-ubuntu-1204: 
+Get:39 http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex [2461 B]I, [2014-01-22T15:08:22.720217 #10484]  INFO -- relp-ubuntu-1204: 
+Get:40 http://us.archive.ubuntu.com precise-updates/universe TranslationIndex [2850 B]I, [2014-01-22T15:08:22.847881 #10484]  INFO -- relp-ubuntu-1204: 
+Get:41 http://us.archive.ubuntu.com precise-backports/main Sources [4226 B]I, [2014-01-22T15:08:23.039506 #10484]  INFO -- relp-ubuntu-1204: 
+Get:42 http://us.archive.ubuntu.com precise-backports/restricted Sources [14 B]I, [2014-01-22T15:08:23.142449 #10484]  INFO -- relp-ubuntu-1204: 
+Get:43 http://us.archive.ubuntu.com precise-backports/universe Sources [36.4 kB]I, [2014-01-22T15:08:23.253462 #10484]  INFO -- relp-ubuntu-1204: 
+Get:44 http://us.archive.ubuntu.com precise-backports/multiverse Sources [5311 B]I, [2014-01-22T15:08:23.430180 #10484]  INFO -- relp-ubuntu-1204: 
+Get:45 http://us.archive.ubuntu.com precise-backports/main amd64 Packages [4806 B]I, [2014-01-22T15:08:23.548307 #10484]  INFO -- relp-ubuntu-1204: 
+Get:46 http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages [14 B]I, [2014-01-22T15:08:23.650034 #10484]  INFO -- relp-ubuntu-1204: 
+Get:47 http://us.archive.ubuntu.com precise-backports/universe amd64 Packages [37.9 kB]I, [2014-01-22T15:08:23.840854 #10484]  INFO -- relp-ubuntu-1204: 
+Get:48 http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages [5206 B]I, [2014-01-22T15:08:23.999333 #10484]  INFO -- relp-ubuntu-1204: 
+Get:49 http://us.archive.ubuntu.com precise-backports/main i386 Packages [4811 B]I, [2014-01-22T15:08:24.136813 #10484]  INFO -- relp-ubuntu-1204: 
+Get:50 http://us.archive.ubuntu.com precise-backports/restricted i386 Packages [14 B]I, [2014-01-22T15:08:24.279904 #10484]  INFO -- relp-ubuntu-1204: 
+Get:51 http://us.archive.ubuntu.com precise-backports/universe i386 Packages [37.7 kB]I, [2014-01-22T15:08:24.387637 #10484]  INFO -- relp-ubuntu-1204: 
+Get:52 http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages [5178 B]I, [2014-01-22T15:08:24.506624 #10484]  INFO -- relp-ubuntu-1204: 
+Get:53 http://us.archive.ubuntu.com precise-backports/main TranslationIndex [72 B]I, [2014-01-22T15:08:24.660850 #10484]  INFO -- relp-ubuntu-1204: 
+Get:54 http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex [72 B]I, [2014-01-22T15:08:24.780984 #10484]  INFO -- relp-ubuntu-1204: 
+Get:55 http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex [70 B]I, [2014-01-22T15:08:24.895164 #10484]  INFO -- relp-ubuntu-1204: 
+Get:56 http://us.archive.ubuntu.com precise-backports/universe TranslationIndex [73 B]I, [2014-01-22T15:08:25.043088 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main Translation-enI, [2014-01-22T15:08:25.159556 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse Translation-enI, [2014-01-22T15:08:25.302706 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted Translation-enI, [2014-01-22T15:08:25.433428 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe Translation-enI, [2014-01-22T15:08:25.591189 #10484]  INFO -- relp-ubuntu-1204: 
+Get:57 http://us.archive.ubuntu.com precise-updates/main Translation-en [334 kB]I, [2014-01-22T15:08:25.753675 #10484]  INFO -- relp-ubuntu-1204: 
+Get:58 http://us.archive.ubuntu.com precise-updates/multiverse Translation-en [8293 B]I, [2014-01-22T15:08:26.215080 #10484]  INFO -- relp-ubuntu-1204: 
+Get:59 http://us.archive.ubuntu.com precise-updates/restricted Translation-en [2663 B]I, [2014-01-22T15:08:26.379429 #10484]  INFO -- relp-ubuntu-1204: 
+Get:60 http://us.archive.ubuntu.com precise-updates/universe Translation-en [135 kB]I, [2014-01-22T15:08:26.505018 #10484]  INFO -- relp-ubuntu-1204: 
+Get:61 http://us.archive.ubuntu.com precise-backports/main Translation-en [4235 B]I, [2014-01-22T15:08:26.780807 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-enI, [2014-01-22T15:08:26.900148 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-enI, [2014-01-22T15:08:27.020209 #10484]  INFO -- relp-ubuntu-1204: 
+Get:62 http://us.archive.ubuntu.com precise-backports/universe Translation-en [27.7 kB]I, [2014-01-22T15:08:27.161066 #10484]  INFO -- relp-ubuntu-1204: 
+Fetched 4699 kB in 15s (299 kB/s)I, [2014-01-22T15:08:27.177992 #10484]  INFO -- relp-ubuntu-1204: 
+Reading package lists...I, [2014-01-22T15:08:28.868202 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:26+00:00] INFO: execute[apt-get-update] ran successfullyI, [2014-01-22T15:08:28.896050 #10484]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T15:08:28.896293 #10484]  INFO -- relp-ubuntu-1204: 
+    - execute apt-get update[0mI, [2014-01-22T15:08:28.896474 #10484]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T15:08:28.896644 #10484]  INFO -- relp-ubuntu-1204: 
+  * execute[apt-get update] action nothing[0m[2014-01-22T21:08:26+00:00] INFO: Processing execute[apt-get update] action nothing (apt::default line 38)I, [2014-01-22T15:08:28.897105 #10484]  INFO -- relp-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-01-22T15:08:28.897280 #10484]  INFO -- relp-ubuntu-1204: 
+  * execute[apt-get autoremove] action nothing[0m[2014-01-22T21:08:26+00:00] INFO: Processing execute[apt-get autoremove] action nothing (apt::default line 46)I, [2014-01-22T15:08:28.897692 #10484]  INFO -- relp-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-01-22T15:08:28.897959 #10484]  INFO -- relp-ubuntu-1204: 
+  * execute[apt-get autoclean] action nothing[0m[2014-01-22T21:08:26+00:00] INFO: Processing execute[apt-get autoclean] action nothing (apt::default line 53)I, [2014-01-22T15:08:28.898450 #10484]  INFO -- relp-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-01-22T15:08:28.898639 #10484]  INFO -- relp-ubuntu-1204: 
+  * package[update-notifier-common] action install[0m[2014-01-22T21:08:26+00:00] INFO: Processing package[update-notifier-common] action install (apt::default line 60)I, [2014-01-22T15:08:28.899037 #10484]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T15:08:30.883676 #10484]  INFO -- relp-ubuntu-1204: 
+    - install version 0.119ubuntu8.6 of package update-notifier-common[0mI, [2014-01-22T15:08:30.883915 #10484]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T15:08:30.884116 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:28+00:00] INFO: package[update-notifier-common] sending run action to execute[apt-get-update] (immediate)I, [2014-01-22T15:08:30.884278 #10484]  INFO -- relp-ubuntu-1204: 
+  * execute[apt-get-update] action run[0m[2014-01-22T21:08:28+00:00] INFO: Processing execute[apt-get-update] action run (apt::default line 30)I, [2014-01-22T15:08:30.884718 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security Release.gpgI, [2014-01-22T15:08:31.024342 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise Release.gpgI, [2014-01-22T15:08:31.048409 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates Release.gpgI, [2014-01-22T15:08:31.110272 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security ReleaseI, [2014-01-22T15:08:31.149995 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports Release.gpgI, [2014-01-22T15:08:31.199286 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise ReleaseI, [2014-01-22T15:08:31.273280 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main SourcesI, [2014-01-22T15:08:31.300835 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates ReleaseI, [2014-01-22T15:08:31.345047 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports ReleaseI, [2014-01-22T15:08:31.412025 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted SourcesI, [2014-01-22T15:08:31.485765 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main SourcesI, [2014-01-22T15:08:31.488062 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted SourcesI, [2014-01-22T15:08:31.568093 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe SourcesI, [2014-01-22T15:08:31.608886 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe SourcesI, [2014-01-22T15:08:31.646246 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse SourcesI, [2014-01-22T15:08:31.734898 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse SourcesI, [2014-01-22T15:08:31.758716 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main amd64 PackagesI, [2014-01-22T15:08:31.844889 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main amd64 PackagesI, [2014-01-22T15:08:31.845591 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted amd64 PackagesI, [2014-01-22T15:08:31.919970 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted amd64 PackagesI, [2014-01-22T15:08:31.959225 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe amd64 PackagesI, [2014-01-22T15:08:31.997132 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse amd64 PackagesI, [2014-01-22T15:08:32.075325 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe amd64 PackagesI, [2014-01-22T15:08:32.088620 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main i386 PackagesI, [2014-01-22T15:08:32.158506 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse amd64 PackagesI, [2014-01-22T15:08:32.183628 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted i386 PackagesI, [2014-01-22T15:08:32.239503 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main i386 PackagesI, [2014-01-22T15:08:32.298409 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe i386 PackagesI, [2014-01-22T15:08:32.313249 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse i386 PackagesI, [2014-01-22T15:08:32.398874 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted i386 PackagesI, [2014-01-22T15:08:32.450448 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main TranslationIndexI, [2014-01-22T15:08:32.481268 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe i386 PackagesI, [2014-01-22T15:08:32.558009 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndexI, [2014-01-22T15:08:32.568074 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted TranslationIndexI, [2014-01-22T15:08:32.663545 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse i386 PackagesI, [2014-01-22T15:08:32.682940 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe TranslationIndexI, [2014-01-22T15:08:32.745410 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main TranslationIndexI, [2014-01-22T15:08:32.848101 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/main SourcesI, [2014-01-22T15:08:32.871833 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted SourcesI, [2014-01-22T15:08:32.961616 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse TranslationIndexI, [2014-01-22T15:08:32.968474 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe SourcesI, [2014-01-22T15:08:33.099854 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted TranslationIndexI, [2014-01-22T15:08:33.125541 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe TranslationIndexI, [2014-01-22T15:08:33.254386 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse SourcesI, [2014-01-22T15:08:33.261835 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/main amd64 PackagesI, [2014-01-22T15:08:33.346143 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main Translation-enI, [2014-01-22T15:08:33.378065 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted amd64 PackagesI, [2014-01-22T15:08:33.429522 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse Translation-enI, [2014-01-22T15:08:33.508608 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe amd64 PackagesI, [2014-01-22T15:08:33.521035 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse amd64 PackagesI, [2014-01-22T15:08:33.605519 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted Translation-enI, [2014-01-22T15:08:33.649207 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/main i386 PackagesI, [2014-01-22T15:08:33.699477 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe Translation-enI, [2014-01-22T15:08:33.772997 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted i386 PackagesI, [2014-01-22T15:08:33.784264 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe i386 PackagesI, [2014-01-22T15:08:33.866449 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse i386 PackagesI, [2014-01-22T15:08:33.947878 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/main TranslationIndexI, [2014-01-22T15:08:34.028349 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndexI, [2014-01-22T15:08:34.118756 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted TranslationIndexI, [2014-01-22T15:08:34.200535 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe TranslationIndexI, [2014-01-22T15:08:34.280990 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main SourcesI, [2014-01-22T15:08:34.345893 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted SourcesI, [2014-01-22T15:08:34.420067 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe SourcesI, [2014-01-22T15:08:34.532645 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse SourcesI, [2014-01-22T15:08:34.635624 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main amd64 PackagesI, [2014-01-22T15:08:34.918003 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted amd64 PackagesI, [2014-01-22T15:08:34.989213 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe amd64 PackagesI, [2014-01-22T15:08:35.083286 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse amd64 PackagesI, [2014-01-22T15:08:35.159009 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main i386 PackagesI, [2014-01-22T15:08:35.234942 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted i386 PackagesI, [2014-01-22T15:08:35.419903 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe i386 PackagesI, [2014-01-22T15:08:35.499645 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse i386 PackagesI, [2014-01-22T15:08:35.576315 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main TranslationIndexI, [2014-01-22T15:08:35.649086 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndexI, [2014-01-22T15:08:35.727397 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted TranslationIndexI, [2014-01-22T15:08:35.797302 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe TranslationIndexI, [2014-01-22T15:08:35.883233 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main Translation-enI, [2014-01-22T15:08:35.961292 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse Translation-enI, [2014-01-22T15:08:36.027391 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted Translation-enI, [2014-01-22T15:08:36.099047 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe Translation-enI, [2014-01-22T15:08:36.181659 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/main Translation-enI, [2014-01-22T15:08:36.257232 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse Translation-enI, [2014-01-22T15:08:36.320979 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted Translation-enI, [2014-01-22T15:08:36.398229 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe Translation-enI, [2014-01-22T15:08:36.473264 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main Translation-enI, [2014-01-22T15:08:36.563380 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-enI, [2014-01-22T15:08:36.640054 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-enI, [2014-01-22T15:08:36.722177 #10484]  INFO -- relp-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe Translation-enI, [2014-01-22T15:08:36.798493 #10484]  INFO -- relp-ubuntu-1204: 
+Reading package lists...I, [2014-01-22T15:08:38.415685 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:36+00:00] INFO: execute[apt-get-update] ran successfullyI, [2014-01-22T15:08:38.428401 #10484]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T15:08:38.428664 #10484]  INFO -- relp-ubuntu-1204: 
+    - execute apt-get update[0mI, [2014-01-22T15:08:38.428907 #10484]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T15:08:38.429131 #10484]  INFO -- relp-ubuntu-1204: 
+  * execute[apt-get-update-periodic] action run[0m[2014-01-22T21:08:36+00:00] INFO: Processing execute[apt-get-update-periodic] action run (apt::default line 65)I, [2014-01-22T15:08:38.429687 #10484]  INFO -- relp-ubuntu-1204: 
+ (skipped due to only_if)[0mI, [2014-01-22T15:08:38.429989 #10484]  INFO -- relp-ubuntu-1204: 
+  * directory[/var/cache/local] action create[0m[2014-01-22T21:08:36+00:00] INFO: Processing directory[/var/cache/local] action create (apt::default line 76)I, [2014-01-22T15:08:38.430419 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:36+00:00] INFO: directory[/var/cache/local] created directory /var/cache/localI, [2014-01-22T15:08:38.431160 #10484]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T15:08:38.431362 #10484]  INFO -- relp-ubuntu-1204: 
+    - create new directory /var/cache/local[0m[2014-01-22T21:08:36+00:00] INFO: directory[/var/cache/local] owner changed to 0I, [2014-01-22T15:08:38.432070 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:36+00:00] INFO: directory[/var/cache/local] group changed to 0I, [2014-01-22T15:08:38.432417 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:36+00:00] INFO: directory[/var/cache/local] mode changed to 755I, [2014-01-22T15:08:38.432717 #10484]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T15:08:38.433067 #10484]  INFO -- relp-ubuntu-1204: 
+    - change mode from '' to '0755'[0m[32mI, [2014-01-22T15:08:38.433391 #10484]  INFO -- relp-ubuntu-1204: 
+    - change owner from '' to 'root'[0m[32mI, [2014-01-22T15:08:38.433571 #10484]  INFO -- relp-ubuntu-1204: 
+    - change group from '' to 'root'[0mI, [2014-01-22T15:08:38.434320 #10484]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T15:08:38.434465 #10484]  INFO -- relp-ubuntu-1204: 
+  * directory[/var/cache/local/preseeding] action create[0m[2014-01-22T21:08:36+00:00] INFO: Processing directory[/var/cache/local/preseeding] action create (apt::default line 76)I, [2014-01-22T15:08:38.434819 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:36+00:00] INFO: directory[/var/cache/local/preseeding] created directory /var/cache/local/preseedingI, [2014-01-22T15:08:38.435287 #10484]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T15:08:38.435514 #10484]  INFO -- relp-ubuntu-1204: 
+    - create new directory /var/cache/local/preseeding[0m[2014-01-22T21:08:36+00:00] INFO: directory[/var/cache/local/preseeding] owner changed to 0I, [2014-01-22T15:08:38.435958 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:36+00:00] INFO: directory[/var/cache/local/preseeding] group changed to 0I, [2014-01-22T15:08:38.436200 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:36+00:00] INFO: directory[/var/cache/local/preseeding] mode changed to 755I, [2014-01-22T15:08:38.436402 #10484]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T15:08:38.436640 #10484]  INFO -- relp-ubuntu-1204: 
+    - change mode from '' to '0755'[0m[32mI, [2014-01-22T15:08:38.436949 #10484]  INFO -- relp-ubuntu-1204: 
+    - change owner from '' to 'root'[0m[32mI, [2014-01-22T15:08:38.437220 #10484]  INFO -- relp-ubuntu-1204: 
+    - change group from '' to 'root'[0mI, [2014-01-22T15:08:38.437525 #10484]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T15:08:38.437719 #10484]  INFO -- relp-ubuntu-1204: 
+Recipe: rackspace_rsyslog::default[0mI, [2014-01-22T15:08:38.437884 #10484]  INFO -- relp-ubuntu-1204: 
+  * package[rsyslog] action install[0m[2014-01-22T21:08:36+00:00] INFO: Processing package[rsyslog] action install (rackspace_rsyslog::default line 21)I, [2014-01-22T15:08:38.438172 #10484]  INFO -- relp-ubuntu-1204: 
+ (up to date)[0mI, [2014-01-22T15:08:38.467101 #10484]  INFO -- relp-ubuntu-1204: 
+  * package[rsyslog-relp] action install[0m[2014-01-22T21:08:36+00:00] INFO: Processing package[rsyslog-relp] action install (rackspace_rsyslog::default line 22)I, [2014-01-22T15:08:38.467498 #10484]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T15:08:41.086580 #10484]  INFO -- relp-ubuntu-1204: 
+    - install version 5.8.6-1ubuntu8.6 of package rsyslog-relp[0mI, [2014-01-22T15:08:41.086812 #10484]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T15:08:41.087007 #10484]  INFO -- relp-ubuntu-1204: 
+  * directory[/etc/rsyslog.d] action create[0m[2014-01-22T21:08:38+00:00] INFO: Processing directory[/etc/rsyslog.d] action create (rackspace_rsyslog::default line 24)I, [2014-01-22T15:08:41.087540 #10484]  INFO -- relp-ubuntu-1204: 
+ (up to date)[0mI, [2014-01-22T15:08:41.088386 #10484]  INFO -- relp-ubuntu-1204: 
+  * directory[/var/spool/rsyslog] action create[0m[2014-01-22T21:08:38+00:00] INFO: Processing directory[/var/spool/rsyslog] action create (rackspace_rsyslog::default line 30)I, [2014-01-22T15:08:41.088809 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:38+00:00] INFO: directory[/var/spool/rsyslog] owner changed to 0I, [2014-01-22T15:08:41.089676 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:38+00:00] INFO: directory[/var/spool/rsyslog] group changed to 0I, [2014-01-22T15:08:41.090049 #10484]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T15:08:41.090488 #10484]  INFO -- relp-ubuntu-1204: 
+    - change owner from 'syslog' to 'root'[0m[32mI, [2014-01-22T15:08:41.090783 #10484]  INFO -- relp-ubuntu-1204: 
+    - change group from 'adm' to 'root'[0mI, [2014-01-22T15:08:41.090990 #10484]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T15:08:41.091140 #10484]  INFO -- relp-ubuntu-1204: 
+  * template[/etc/rsyslog.conf] action create[0m[2014-01-22T21:08:38+00:00] INFO: Processing template[/etc/rsyslog.conf] action create (rackspace_rsyslog::default line 38)I, [2014-01-22T15:08:41.091442 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:38+00:00] INFO: template[/etc/rsyslog.conf] backed up to /tmp/kitchen/backup/etc/rsyslog.conf.chef-20140122210838.982730I, [2014-01-22T15:08:41.152002 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:38+00:00] INFO: template[/etc/rsyslog.conf] updated file contents /etc/rsyslog.confI, [2014-01-22T15:08:41.152597 #10484]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T15:08:41.152925 #10484]  INFO -- relp-ubuntu-1204: 
+    - update content in file /etc/rsyslog.conf from cd2113 to 92cccf[0m[37mI, [2014-01-22T15:08:41.153207 #10484]  INFO -- relp-ubuntu-1204: 
+        --- /etc/rsyslog.conf	2013-06-05 19:24:28.000000000 +0000[0m[37mI, [2014-01-22T15:08:41.153562 #10484]  INFO -- relp-ubuntu-1204: 
+        +++ /tmp/chef-rendered-template20140122-1251-jtulf9	2014-01-22 21:08:38.976549172 +0000[0m[37mI, [2014-01-22T15:08:41.153914 #10484]  INFO -- relp-ubuntu-1204: 
+        @@ -1,34 +1,32 @@[0m[37mI, [2014-01-22T15:08:41.154133 #10484]  INFO -- relp-ubuntu-1204: 
+        -#  /etc/rsyslog.conf	Configuration file for rsyslog.[0m[37mI, [2014-01-22T15:08:41.154491 #10484]  INFO -- relp-ubuntu-1204: 
+        +#  /etc/rsyslog.conf	Configuration file for rsyslog v3.[0m[37mI, [2014-01-22T15:08:41.154849 #10484]  INFO -- relp-ubuntu-1204: 
+         #[0m[37mI, [2014-01-22T15:08:41.155023 #10484]  INFO -- relp-ubuntu-1204: 
+         #			For more information see[0m[37mI, [2014-01-22T15:08:41.155456 #10484]  INFO -- relp-ubuntu-1204: 
+         #			/usr/share/doc/rsyslog-doc/html/rsyslog_conf.html[0m[37mI, [2014-01-22T15:08:41.156097 #10484]  INFO -- relp-ubuntu-1204: 
+        +[0m[37mI, [2014-01-22T15:08:41.156367 #10484]  INFO -- relp-ubuntu-1204: 
+         #[0m[37mI, [2014-01-22T15:08:41.156558 #10484]  INFO -- relp-ubuntu-1204: 
+        -#  Default logging rules can be found in /etc/rsyslog.d/50-default.conf[0m[37mI, [2014-01-22T15:08:41.156724 #10484]  INFO -- relp-ubuntu-1204: 
+        +# Set max message size[0m[37mI, [2014-01-22T15:08:41.156887 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.156914 #10484]  INFO -- relp-ubuntu-1204:  +#[0m[37m
+I, [2014-01-22T15:08:41.156933 #10484]  INFO -- relp-ubuntu-1204:  +$MaxMessageSize 2k[0m[37m
+I, [2014-01-22T15:08:41.156950 #10484]  INFO -- relp-ubuntu-1204:   [0m[37m
+I, [2014-01-22T15:08:41.157044 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.157067 #10484]  INFO -- relp-ubuntu-1204:  +#[0m[37m
+I, [2014-01-22T15:08:41.157084 #10484]  INFO -- relp-ubuntu-1204:  +# Preserve FQDN[0m[37m
+I, [2014-01-22T15:08:41.157100 #10484]  INFO -- relp-ubuntu-1204:  +#[0m[37m
+I, [2014-01-22T15:08:41.157116 #10484]  INFO -- relp-ubuntu-1204:  +$PreserveFQDN off[0m[37m
+I, [2014-01-22T15:08:41.157131 #10484]  INFO -- relp-ubuntu-1204:   [0m[37m
+I, [2014-01-22T15:08:41.157147 #10484]  INFO -- relp-ubuntu-1204:   #################[0m[37m
+I, [2014-01-22T15:08:41.157163 #10484]  INFO -- relp-ubuntu-1204:   #### MODULES ####[0m[37m
+I, [2014-01-22T15:08:41.157178 #10484]  INFO -- relp-ubuntu-1204:   #################[0m[37m
+I, [2014-01-22T15:08:41.157193 #10484]  INFO -- relp-ubuntu-1204:   [0m[37m
+I, [2014-01-22T15:08:41.157208 #10484]  INFO -- relp-ubuntu-1204:  -$ModLoad imuxsock # provides support for local system logging[0m[37m
+I, [2014-01-22T15:08:41.157224 #10484]  INFO -- relp-ubuntu-1204:  -$ModLoad imklog   # provides kernel logging support (previously done by rklogd)[0m[37m
+I, [2014-01-22T15:08:41.157370 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.157393 #10484]  INFO -- relp-ubuntu-1204:  -#$ModLoad immark  # provides --MARK-- message capability[0m[37m
+I, [2014-01-22T15:08:41.157411 #10484]  INFO -- relp-ubuntu-1204:  +$ModLoad imuxsock[0m[37m
+I, [2014-01-22T15:08:41.157427 #10484]  INFO -- relp-ubuntu-1204:  +$ModLoad imklog[0m[37m
+I, [2014-01-22T15:08:41.157442 #10484]  INFO -- relp-ubuntu-1204:   [0m[37m
+I, [2014-01-22T15:08:41.157458 #10484]  INFO -- relp-ubuntu-1204:  -# provides UDP syslog reception[0m[37m
+I, [2014-01-22T15:08:41.157473 #10484]  INFO -- relp-ubuntu-1204:  -#$ModLoad imudp[0m[37m
+I, [2014-01-22T15:08:41.157490 #10484]  INFO -- relp-ubuntu-1204:  -#$UDPServerRun 514[0m[37m
+I, [2014-01-22T15:08:41.157505 #10484]  INFO -- relp-ubuntu-1204:   [0m[37m
+I, [2014-01-22T15:08:41.157520 #10484]  INFO -- relp-ubuntu-1204:  -# provides TCP syslog reception[0m[37m
+I, [2014-01-22T15:08:41.157541 #10484]  INFO -- relp-ubuntu-1204:  -#$ModLoad imtcp[0m[37m
+I, [2014-01-22T15:08:41.157558 #10484]  INFO -- relp-ubuntu-1204:  -#$InputTCPServerRun 514[0m[37m
+I, [2014-01-22T15:08:41.157711 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.157734 #10484]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T15:08:41.157751 #10484]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T15:08:41.157767 #10484]  INFO -- relp-ubuntu-1204:   ###########################[0m[37m
+I, [2014-01-22T15:08:41.157783 #10484]  INFO -- relp-ubuntu-1204:   #### GLOBAL DIRECTIVES ####[0m[37m
+I, [2014-01-22T15:08:41.157798 #10484]  INFO -- relp-ubuntu-1204:   ###########################[0m[37m
+I, [2014-01-22T15:08:41.157813 #10484]  INFO -- relp-ubuntu-1204:   [0m[37m
+I, [2014-01-22T15:08:41.157828 #10484]  INFO -- relp-ubuntu-1204:   #[0m[37m
+I, [2014-01-22T15:08:41.157844 #10484]  INFO -- relp-ubuntu-1204:  -# Use traditional timestamp format.[0m[37m
+I, [2014-01-22T15:08:41.157859 #10484]  INFO -- relp-ubuntu-1204:  +# Use default timestamp format.[0m[37m
+I, [2014-01-22T15:08:41.157875 #10484]  INFO -- relp-ubuntu-1204:   # To enable high precision timestamps, comment out the following line.[0m[37m
+I, [2014-01-22T15:08:41.157890 #10484]  INFO -- relp-ubuntu-1204:   #[0m[37m
+I, [2014-01-22T15:08:41.157905 #10484]  INFO -- relp-ubuntu-1204:   $ActionFileDefaultTemplate RSYSLOG_TraditionalFileFormat[0m[37m
+I, [2014-01-22T15:08:41.168111 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.168172 #10484]  INFO -- relp-ubuntu-1204:  @@ -37,24 +35,20 @@[0m[37m
+I, [2014-01-22T15:08:41.168190 #10484]  INFO -- relp-ubuntu-1204:   $RepeatedMsgReduction on[0m[37m
+I, [2014-01-22T15:08:41.168208 #10484]  INFO -- relp-ubuntu-1204:   [0m[37m
+I, [2014-01-22T15:08:41.168223 #10484]  INFO -- relp-ubuntu-1204:   #[0m[37m
+I, [2014-01-22T15:08:41.168245 #10484]  INFO -- relp-ubuntu-1204:  +# Set temporary directory to buffer syslog queue[0m[37m
+I, [2014-01-22T15:08:41.168294 #10484]  INFO -- relp-ubuntu-1204:  +#[0m[37m
+I, [2014-01-22T15:08:41.168309 #10484]  INFO -- relp-ubuntu-1204:  +$WorkDirectory /var/spool/rsyslog[0m[37m
+I, [2014-01-22T15:08:41.168324 #10484]  INFO -- relp-ubuntu-1204:  +[0m[37m
+I, [2014-01-22T15:08:41.168373 #10484]  INFO -- relp-ubuntu-1204:  +#[0m[37m
+I, [2014-01-22T15:08:41.168426 #10484]  INFO -- relp-ubuntu-1204:   # Set the default permissions for all log files.[0m[37m
+I, [2014-01-22T15:08:41.168444 #10484]  INFO -- relp-ubuntu-1204:   #[0m[37m
+I, [2014-01-22T15:08:41.168470 #10484]  INFO -- relp-ubuntu-1204:  -$FileOwner syslog[0m[37m
+I, [2014-01-22T15:08:41.168651 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.168685 #10484]  INFO -- relp-ubuntu-1204:  +$FileOwner root[0m[37m
+I, [2014-01-22T15:08:41.168712 #10484]  INFO -- relp-ubuntu-1204:   $FileGroup adm[0m[37m
+I, [2014-01-22T15:08:41.168727 #10484]  INFO -- relp-ubuntu-1204:   $FileCreateMode 0640[0m[37m
+I, [2014-01-22T15:08:41.168757 #10484]  INFO -- relp-ubuntu-1204:   $DirCreateMode 0755[0m[37m
+I, [2014-01-22T15:08:41.168772 #10484]  INFO -- relp-ubuntu-1204:   $Umask 0022[0m[37m
+I, [2014-01-22T15:08:41.168786 #10484]  INFO -- relp-ubuntu-1204:  -$PrivDropToUser syslog[0m[37m
+I, [2014-01-22T15:08:41.168801 #10484]  INFO -- relp-ubuntu-1204:  -$PrivDropToGroup syslog[0m[37m
+I, [2014-01-22T15:08:41.168815 #10484]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T15:08:41.168830 #10484]  INFO -- relp-ubuntu-1204:   #[0m[37m
+I, [2014-01-22T15:08:41.168844 #10484]  INFO -- relp-ubuntu-1204:  -# Where to place spool files[0m[37m
+I, [2014-01-22T15:08:41.168869 #10484]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T15:08:41.169024 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.169046 #10484]  INFO -- relp-ubuntu-1204:  -$WorkDirectory /var/spool/rsyslog[0m[37m
+I, [2014-01-22T15:08:41.169061 #10484]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T15:08:41.169086 #10484]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T15:08:41.169119 #10484]  INFO -- relp-ubuntu-1204:   # Include all config files in /etc/rsyslog.d/[0m[37m
+I, [2014-01-22T15:08:41.169150 #10484]  INFO -- relp-ubuntu-1204:   #[0m[37m
+I, [2014-01-22T15:08:41.169241 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.169262 #10484]  INFO -- relp-ubuntu-1204:   $IncludeConfig /etc/rsyslog.d/*.conf[0m[37m
+I, [2014-01-22T15:08:41.169288 #10484]  INFO -- relp-ubuntu-1204:  -[0m
+[0mI, [2014-01-22T15:08:41.169442 #10484]  INFO -- relp-ubuntu-1204: 
+  * template[/etc/rsyslog.d/50-default.conf] action create[0m[2014-01-22T21:08:38+00:00] INFO: Processing template[/etc/rsyslog.d/50-default.conf] action create (rackspace_rsyslog::default line 46)I, [2014-01-22T15:08:41.169622 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:38+00:00] INFO: template[/etc/rsyslog.d/50-default.conf] backed up to /tmp/kitchen/backup/etc/rsyslog.d/50-default.conf.chef-20140122210838.992745I, [2014-01-22T15:08:41.169744 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:38+00:00] INFO: template[/etc/rsyslog.d/50-default.conf] updated file contents /etc/rsyslog.d/50-default.confI, [2014-01-22T15:08:41.169845 #10484]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T15:08:41.169959 #10484]  INFO -- relp-ubuntu-1204: 
+    - update content in file /etc/rsyslog.d/50-default.conf from e85a0e to 7e01d3[0m[37mI, [2014-01-22T15:08:41.170094 #10484]  INFO -- relp-ubuntu-1204: 
+        --- /etc/rsyslog.d/50-default.conf	2013-06-05 19:24:28.000000000 +0000[0m[37mI, [2014-01-22T15:08:41.170319 #10484]  INFO -- relp-ubuntu-1204: 
+        +++ /tmp/chef-rendered-template20140122-1251-jqgdi2	2014-01-22 21:08:38.988555173 +0000[0m[37mI, [2014-01-22T15:08:41.170543 #10484]  INFO -- relp-ubuntu-1204: 
+        @@ -1,69 +1,20 @@[0m[37mI, [2014-01-22T15:08:41.170677 #10484]  INFO -- relp-ubuntu-1204: 
+        -#  Default rules for rsyslog.[0m[37mI, [2014-01-22T15:08:41.170825 #10484]  INFO -- relp-ubuntu-1204: 
+        -#[0m[37mI, [2014-01-22T15:08:41.170972 #10484]  INFO -- relp-ubuntu-1204: 
+        -#			For more information see rsyslog.conf(5) and /etc/rsyslog.conf[0m[37mI, [2014-01-22T15:08:41.171261 #10484]  INFO -- relp-ubuntu-1204: 
+        +# Generated by Chef for relp-ubuntu-1204.vagrantup.com[0m[37mI, [2014-01-22T15:08:41.171395 #10484]  INFO -- relp-ubuntu-1204: 
+        +# For more information see rsyslog.conf(5) and /etc/rsyslog.conf[0m[37mI, [2014-01-22T15:08:41.171545 #10484]  INFO -- relp-ubuntu-1204: 
+         [0m[37mI, [2014-01-22T15:08:41.171680 #10484]  INFO -- relp-ubuntu-1204: 
+        -#[0m[37mI, [2014-01-22T15:08:41.171828 #10484]  INFO -- relp-ubuntu-1204: 
+        -# First some standard log files.  Log by facility.[0m[37mI, [2014-01-22T15:08:41.171962 #10484]  INFO -- relp-ubuntu-1204: 
+        -#[0m[37mI, [2014-01-22T15:08:41.172110 #10484]  INFO -- relp-ubuntu-1204: 
+        -auth,authpriv.*			I, [2014-01-22T15:08:41.206285 #10484]  INFO -- relp-ubuntu-1204: /var/log/auth.log[0m[37m
+I, [2014-01-22T15:08:41.206352 #10484]  INFO -- relp-ubuntu-1204:  -*.*;auth,authpriv.none		-/var/log/syslog[0m[37m
+I, [2014-01-22T15:08:41.206386 #10484]  INFO -- relp-ubuntu-1204:  -#cron.*				/var/log/cron.log[0m[37m
+I, [2014-01-22T15:08:41.206417 #10484]  INFO -- relp-ubuntu-1204:  -#daemon.*			-/var/log/daemon.log[0m[37m
+I, [2014-01-22T15:08:41.206576 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.206603 #10484]  INFO -- relp-ubuntu-1204:  -kern.*				-/var/log/kern.log[0m[37m
+I, [2014-01-22T15:08:41.206630 #10484]  INFO -- relp-ubuntu-1204:  -#lpr.*				-/var/log/lpr.log[0m[37m
+I, [2014-01-22T15:08:41.206655 #10484]  INFO -- relp-ubuntu-1204:  -mail.*				-/var/log/mail.log[0m[37m
+I, [2014-01-22T15:08:41.206680 #10484]  INFO -- relp-ubuntu-1204:  -#user.*				-/var/log/user.log[0m[37m
+I, [2014-01-22T15:08:41.206713 #10484]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T15:08:41.206737 #10484]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T15:08:41.206769 #10484]  INFO -- relp-ubuntu-1204:  -# Logging for the mail system.  Split it up so that[0m[37m
+I, [2014-01-22T15:08:41.206802 #10484]  INFO -- relp-ubuntu-1204:  -# it is easy to write scripts to parse these files.[0m[37m
+I, [2014-01-22T15:08:41.207021 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.207058 #10484]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T15:08:41.207103 #10484]  INFO -- relp-ubuntu-1204:  -#mail.info			-/var/log/mail.info[0m[37m
+I, [2014-01-22T15:08:41.207137 #10484]  INFO -- relp-ubuntu-1204:  -#mail.warn			-/var/log/mail.warn[0m[37m
+I, [2014-01-22T15:08:41.207161 #10484]  INFO -- relp-ubuntu-1204:  -mail.err			/var/log/mail.err[0m[37m
+I, [2014-01-22T15:08:41.207184 #10484]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T15:08:41.207231 #10484]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T15:08:41.207255 #10484]  INFO -- relp-ubuntu-1204:  -# Logging for INN news system.[0m[37m
+I, [2014-01-22T15:08:41.207277 #10484]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T15:08:41.207418 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.207465 #10484]  INFO -- relp-ubuntu-1204:  -news.crit			/var/log/news/news.crit[0m[37m
+I, [2014-01-22T15:08:41.207492 #10484]  INFO -- relp-ubuntu-1204:  -news.err			/var/log/news/news.err[0m[37m
+I, [2014-01-22T15:08:41.207516 #10484]  INFO -- relp-ubuntu-1204:  -news.notice			-/var/log/news/news.notice[0m[37m
+I, [2014-01-22T15:08:41.207549 #10484]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T15:08:41.207571 #10484]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T15:08:41.207595 #10484]  INFO -- relp-ubuntu-1204:  -# Some "catch-all" log files.[0m[37m
+I, [2014-01-22T15:08:41.207617 #10484]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T15:08:41.207639 #10484]  INFO -- relp-ubuntu-1204:  -#*.=debug;\[0m[37m
+I, [2014-01-22T15:08:41.207662 #10484]  INFO -- relp-ubuntu-1204:  -#	auth,authpriv.none;\[0m[37m
+I, [2014-01-22T15:08:41.207684 #10484]  INFO -- relp-ubuntu-1204:  -#	news.none;mail.none	-/var/log/debug[0m[37m
+I, [2014-01-22T15:08:41.207730 #10484]  INFO -- relp-ubuntu-1204:  -#*.=info;*.=notice;*.=warn;\[0m[37m
+I, [2014-01-22T15:08:41.207752 #10484]  INFO -- relp-ubuntu-1204:  -#	auth,authpriv.none;\[0m[37m
+I, [2014-01-22T15:08:41.207773 #10484]  INFO -- relp-ubuntu-1204:  -#	cron,daemon.none;\[0m[37m
+I, [2014-01-22T15:08:41.207795 #10484]  INFO -- relp-ubuntu-1204:  -#	mail,news.none		-/var/log/messages[0m[37m
+I, [2014-01-22T15:08:41.207817 #10484]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T15:08:41.208003 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.208027 #10484]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T15:08:41.208053 #10484]  INFO -- relp-ubuntu-1204:  -# Emergencies are sent to everybody logged in.[0m[37m
+I, [2014-01-22T15:08:41.208075 #10484]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T15:08:41.208100 #10484]  INFO -- relp-ubuntu-1204:  -*.emerg                                :omusrmsg:*[0m[37m
+I, [2014-01-22T15:08:41.208218 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.208242 #10484]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T15:08:41.208267 #10484]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T15:08:41.208290 #10484]  INFO -- relp-ubuntu-1204:  -# I like to have messages displayed on the console, but only on a virtual[0m[37m
+I, [2014-01-22T15:08:41.208313 #10484]  INFO -- relp-ubuntu-1204:  -# console I usually leave idle.[0m[37m
+I, [2014-01-22T15:08:41.208335 #10484]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T15:08:41.208357 #10484]  INFO -- relp-ubuntu-1204:  -#daemon,mail.*;\[0m[37m
+I, [2014-01-22T15:08:41.208391 #10484]  INFO -- relp-ubuntu-1204:  -#	news.=crit;news.=err;news.=notice;\[0m[37m
+I, [2014-01-22T15:08:41.208414 #10484]  INFO -- relp-ubuntu-1204:  -#	*.=debug;*.=info;\[0m[37m
+I, [2014-01-22T15:08:41.208435 #10484]  INFO -- relp-ubuntu-1204:  -#	*.=notice;*.=warn	/dev/tty8[0m[37m
+I, [2014-01-22T15:08:41.208457 #10484]  INFO -- relp-ubuntu-1204:  -[0m[37m
+I, [2014-01-22T15:08:41.208486 #10484]  INFO -- relp-ubuntu-1204:  -# The named pipe /dev/xconsole is for the `xconsole' utility.  To use it,[0m[37m
+I, [2014-01-22T15:08:41.208509 #10484]  INFO -- relp-ubuntu-1204:  -# you must invoke `xconsole' with the `-file' option:[0m[37m
+I, [2014-01-22T15:08:41.208531 #10484]  INFO -- relp-ubuntu-1204:  -# [0m[37m
+I, [2014-01-22T15:08:41.208706 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.208732 #10484]  INFO -- relp-ubuntu-1204:  -#    $ xconsole -file /dev/xconsole [...][0m[37m
+I, [2014-01-22T15:08:41.208756 #10484]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T15:08:41.208780 #10484]  INFO -- relp-ubuntu-1204:  -# NOTE: adjust the list below, or you'll go crazy if you have a reasonably[0m[37m
+I, [2014-01-22T15:08:41.208803 #10484]  INFO -- relp-ubuntu-1204:  -#      busy site..[0m[37m
+I, [2014-01-22T15:08:41.208837 #10484]  INFO -- relp-ubuntu-1204:  -#[0m[37m
+I, [2014-01-22T15:08:41.208860 #10484]  INFO -- relp-ubuntu-1204:  -daemon.*;mail.*;\[0m[37m
+I, [2014-01-22T15:08:41.208882 #10484]  INFO -- relp-ubuntu-1204:  -	news.err;\[0m[37m
+I, [2014-01-22T15:08:41.208904 #10484]  INFO -- relp-ubuntu-1204:  -	*.=debug;*.=info;\[0m[37m
+I, [2014-01-22T15:08:41.208925 #10484]  INFO -- relp-ubuntu-1204:  -	*.=notice;*.=warn	|/dev/xconsole[0m[37m
+I, [2014-01-22T15:08:41.208948 #10484]  INFO -- relp-ubuntu-1204:  +auth,authpriv.*    /var/log/auth.log[0m[37m
+I, [2014-01-22T15:08:41.208969 #10484]  INFO -- relp-ubuntu-1204:  +*.*;auth,authpriv.none    -/var/log/syslog[0m[37m
+I, [2014-01-22T15:08:41.208991 #10484]  INFO -- relp-ubuntu-1204:  +daemon.*    -/var/log/daemon.log[0m[37m
+I, [2014-01-22T15:08:41.209013 #10484]  INFO -- relp-ubuntu-1204:  +kern.*    -/var/log/kern.log[0m[37m
+I, [2014-01-22T15:08:41.209038 #10484]  INFO -- relp-ubuntu-1204:  +mail.*    -/var/log/mail.log[0m[37m
+I, [2014-01-22T15:08:41.209217 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.209253 #10484]  INFO -- relp-ubuntu-1204:  +user.*    -/var/log/user.log[0m[37m
+I, [2014-01-22T15:08:41.209279 #10484]  INFO -- relp-ubuntu-1204:  +mail.info    -/var/log/mail.info[0m[37m
+I, [2014-01-22T15:08:41.209302 #10484]  INFO -- relp-ubuntu-1204:  +mail.warn    -/var/log/mail.warn[0m[37m
+I, [2014-01-22T15:08:41.209325 #10484]  INFO -- relp-ubuntu-1204:  +mail.err    /var/log/mail.err[0m[37m
+I, [2014-01-22T15:08:41.209347 #10484]  INFO -- relp-ubuntu-1204:  +news.crit    /var/log/news/news.crit[0m[37m
+I, [2014-01-22T15:08:41.209369 #10484]  INFO -- relp-ubuntu-1204:  +news.err    /var/log/news/news.err[0m[37m
+I, [2014-01-22T15:08:41.209391 #10484]  INFO -- relp-ubuntu-1204:  +news.notice    -/var/log/news/news.notice[0m[37m
+I, [2014-01-22T15:08:41.209432 #10484]  INFO -- relp-ubuntu-1204:  +*.=debug;auth,authpriv.none;news.none;mail.none    -/var/log/debug[0m[37m
+I, [2014-01-22T15:08:41.209476 #10484]  INFO -- relp-ubuntu-1204:  +*.=info;*.=notice;*.=warn;auth,authpriv.none;cron,daemon.none;mail,news.none    -/var/log/messages[0m[37m
+I, [2014-01-22T15:08:41.209508 #10484]  INFO -- relp-ubuntu-1204:  +*.emerg    *[0m[37m
+I, [2014-01-22T15:08:41.209659 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.209684 #10484]  INFO -- relp-ubuntu-1204:  +daemon.*;mail.*;news.err;*.=debug;*.=info;*.=notice;*.=warn    |/dev/xconsole[0m
+[0mI, [2014-01-22T15:08:41.209869 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:39+00:00] INFO: template[/etc/rsyslog.d/50-default.conf] not queuing delayed action restart on service[rsyslog] (delayed), as it's already been queuedI, [2014-01-22T15:08:41.210021 #10484]  INFO -- relp-ubuntu-1204: 
+  * service[rsyslog] action enable[0m[2014-01-22T21:08:39+00:00] INFO: Processing service[rsyslog] action enable (rackspace_rsyslog::default line 54)I, [2014-01-22T15:08:41.210234 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:39+00:00] INFO: service[rsyslog] enabledI, [2014-01-22T15:08:41.241867 #10484]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T15:08:41.242186 #10484]  INFO -- relp-ubuntu-1204: 
+    - enable service service[rsyslog][0mI, [2014-01-22T15:08:41.242434 #10484]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T15:08:41.242733 #10484]  INFO -- relp-ubuntu-1204: 
+  * service[rsyslog] action start[0m[2014-01-22T21:08:39+00:00] INFO: Processing service[rsyslog] action start (rackspace_rsyslog::default line 54)I, [2014-01-22T15:08:41.243115 #10484]  INFO -- relp-ubuntu-1204: 
+ (up to date)[0mI, [2014-01-22T15:08:41.295900 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:39+00:00] INFO: template[/etc/rsyslog.conf] sending restart action to service[rsyslog] (delayed)I, [2014-01-22T15:08:41.296157 #10484]  INFO -- relp-ubuntu-1204: 
+  * service[rsyslog] action restart[0m[2014-01-22T21:08:39+00:00] INFO: Processing service[rsyslog] action restart (rackspace_rsyslog::default line 54)I, [2014-01-22T15:08:41.296423 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:39+00:00] INFO: service[rsyslog] restartedI, [2014-01-22T15:08:41.385460 #10484]  INFO -- relp-ubuntu-1204: 
+[32mI, [2014-01-22T15:08:41.385733 #10484]  INFO -- relp-ubuntu-1204: 
+    - restart service service[rsyslog][0mI, [2014-01-22T15:08:41.385982 #10484]  INFO -- relp-ubuntu-1204: 
+[0mI, [2014-01-22T15:08:41.386209 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:39+00:00] INFO: Chef Run complete in 29.994547808 secondsI, [2014-01-22T15:08:41.386482 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:39+00:00] INFO: Running report handlersI, [2014-01-22T15:08:41.386756 #10484]  INFO -- relp-ubuntu-1204: 
+[2014-01-22T21:08:39+00:00] INFO: Report handlers completeI, [2014-01-22T15:08:41.387007 #10484]  INFO -- relp-ubuntu-1204: 
+Chef Client finished, 11 resources updated[0mI, [2014-01-22T15:08:41.387327 #10484]  INFO -- relp-ubuntu-1204: 
+I, [2014-01-22T15:08:41.445794 #10484]  INFO -- relp-ubuntu-1204: Finished converging <relp-ubuntu-1204> (1m0.75s).
+I, [2014-01-22T15:08:41.445951 #10484]  INFO -- relp-ubuntu-1204: -----> Setting up <relp-ubuntu-1204>...
+I, [2014-01-22T15:08:41.446746 #10484]  INFO -- relp-ubuntu-1204: Finished setting up <relp-ubuntu-1204> (0m0.00s).
+I, [2014-01-22T15:08:41.446823 #10484]  INFO -- relp-ubuntu-1204: -----> Verifying <relp-ubuntu-1204>...
+I, [2014-01-22T15:08:41.447280 #10484]  INFO -- relp-ubuntu-1204: Finished verifying <relp-ubuntu-1204> (0m0.00s).
+I, [2014-01-22T15:08:41.447482 #10484]  INFO -- relp-ubuntu-1204: -----> Destroying <relp-ubuntu-1204>...
+I, [2014-01-22T15:08:45.540116 #10484]  INFO -- relp-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2014-01-22T15:08:47.015572 #10484]  INFO -- relp-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2014-01-22T15:08:47.460771 #10484]  INFO -- relp-ubuntu-1204: Vagrant instance <relp-ubuntu-1204> destroyed.
+I, [2014-01-22T15:08:47.461207 #10484]  INFO -- relp-ubuntu-1204: Finished destroying <relp-ubuntu-1204> (0m6.01s).
+I, [2014-01-22T15:08:47.461290 #10484]  INFO -- relp-ubuntu-1204: Finished testing <relp-ubuntu-1204> (1m39.92s).
