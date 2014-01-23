@@ -14,7 +14,7 @@ describe 'rackspace_rsyslog::default' do
   context "when node[:rackspace_rsyslog'][:config][:relp] is true" do
     let(:chef_run) do
       ChefSpec::Runner.new(platform: 'ubuntu', version: '12.04') do |node|
-        node.set[:rackspace_rsyslog][:config][:use_relp] = true
+        node.set['rackspace_rsyslog']['config']['use_relp'] = true
       end.converge('rackspace_rsyslog::default')
     end
 

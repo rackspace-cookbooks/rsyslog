@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'rackspace_rsyslog::client' do
-  context 'when node[:rackspace_rsyslog][:config][:server_ip] is not set' do
+  context "when node['rackspace_rsyslog']['config']['server_ip'] is not set" do
     before do
       Chef::Log.stub(:fatal)
       $stdout.stub(:puts)
@@ -14,7 +14,7 @@ describe 'rackspace_rsyslog::client' do
 
   let(:chef_run) do
     ChefSpec::Runner.new(platform: 'ubuntu', version: '12.04') do |node|
-      node.set[:rackspace_rsyslog][:config][:server_ip] = server_ip
+      node.set['rackspace_rsyslog']['config']['server_ip'] = server_ip
     end.converge('rackspace_rsyslog::client')
   end
 

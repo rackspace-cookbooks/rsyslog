@@ -3,14 +3,14 @@ require 'spec_helper'
 describe 'rackspace_rsyslog::server' do
   let(:chef_run) do
     ChefSpec::Runner.new(platform: 'ubuntu', version: '12.04') do |node|
-      node.set[:rackspace_rsyslog][:config][:server] = false
+      node.set['rackspace_rsyslog']['config']['server'] = false
     end.converge('rackspace_rsyslog::server')
   end
 
   let(:service_resource) { 'service[rsyslog]' }
 
-  it 'sets node[:rsyslog][:config][:server] to true' do
-    expect(chef_run.node[:rackspace_rsyslog][:config][:server]).to be_true
+  it "sets node['rackspace_rsyslog']['config']['server'] to true" do
+    expect(chef_run.node['rackspace_rsyslog']['config']['server']).to be_true
   end
 
   it 'includes the default recipe' do

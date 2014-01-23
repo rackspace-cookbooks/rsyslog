@@ -19,9 +19,9 @@
 #
 
 package 'rsyslog'
-package 'rsyslog-relp' if node[:rackspace_rsyslog][:config][:use_relp]
+package 'rsyslog-relp' if node['rackspace_rsyslog']['config']['use_relp']
 
-directory "#{node[:rackspace_rsyslog][:config][:config_prefix]}/rsyslog.d" do
+directory "#{node['rackspace_rsyslog']['config']['config_prefix']}/rsyslog.d" do
   owner 'root'
   group 'root'
   mode  '0755'
@@ -35,23 +35,23 @@ end
 
 # Our main stub which then does its own rsyslog-specific
 # include of things in /etc/rsyslog.d/*
-template "#{node[:rackspace_rsyslog][:config][:config_prefix]}/rsyslog.conf" do
+template "#{node['rackspace_rsyslog']['config']['config_prefix']}/rsyslog.conf" do
   source  'rsyslog.conf.erb'
   owner   'root'
   group   'root'
   mode    '0644'
-  notifies :restart, "service[#{node[:rackspace_rsyslog][:service_name]}]"
+  notifies :restart, "service[#{node['rackspace_rsyslog']['service_name']}]"
 end
 
-template "#{node[:rackspace_rsyslog][:config][:config_prefix]}/rsyslog.d/50-default.conf" do
+template "#{node['rackspace_rsyslog']['config']['config_prefix']}/rsyslog.d/50-default.conf" do
   source  '50-default.conf.erb'
   owner   'root'
   group   'root'
   mode    '0644'
-  notifies :restart, "service[#{node[:rackspace_rsyslog][:service_name]}]"
+  notifies :restart, "service[#{node['rackspace_rsyslog']['service_name']}]"
 end
 
-service node[:rackspace_rsyslog][:service_name] do
+service node['rackspace_rsyslog']['service_name'] do
   supports restart: true, reload: true, status: true
   action   [:enable, :start]
 end
