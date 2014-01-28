@@ -3,4 +3,4 @@ knife test: bundle exec knife cookbook test $COOKBOOK -o $SANDBOX -z
 rubocop:    bundle exec rubocop
 foodcritic: bundle exec foodcritic -f any $SANDBOX/$COOKBOOK
 chefspec:   bundle exec rspec --color
-#kitchen:    bundle exec kitchen test
+kitchen:    bundle exec kitchen test
