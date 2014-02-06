@@ -165,3 +165,63 @@ I, [2014-01-22T15:24:21.112895 #10484]  INFO -- Kitchen: -----> Setting up <serv
 I, [2014-01-22T15:24:21.114721 #10484]  INFO -- Kitchen: -----> Verifying <server-debian-720>...
 I, [2014-01-22T15:24:21.115354 #10484]  INFO -- Kitchen: -----> Destroying <server-debian-720>...
 I, [2014-01-22T15:24:26.595154 #10484]  INFO -- Kitchen: -----> Kitchen is finished. (23m26.34s)
+I, [2014-01-28T11:31:23.361195 #20903]  INFO -- Kitchen: -----> Starting Kitchen (v1.1.1)
+I, [2014-01-28T11:31:23.585584 #20903]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-28T11:31:23.585711 #20903]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-28T11:31:23.586697 #20903]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-01-28T11:31:23.586753 #20903]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-28T11:31:34.780659 #20903]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+E, [2014-01-28T11:31:34.785963 #20903] ERROR -- Kitchen: ------Exception-------
+E, [2014-01-28T11:31:34.785986 #20903] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-01-28T11:31:34.785999 #20903] ERROR -- Kitchen: Message: Failed to complete #create action: [exit]
+E, [2014-01-28T11:31:34.786011 #20903] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-01-28T11:31:34.786022 #20903] ERROR -- Kitchen: Class: SystemExit
+E, [2014-01-28T11:31:34.786032 #20903] ERROR -- Kitchen: Message: exit
+E, [2014-01-28T11:31:34.786043 #20903] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-01-28T11:31:34.786053 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/bin/kitchen:6:in `exit'
+E, [2014-01-28T11:31:34.786064 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/bin/kitchen:6:in `block in <top (required)>'
+E, [2014-01-28T11:31:34.786074 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/mixlib-shellout-1.3.0/lib/mixlib/shellout/unix.rb:233:in `call'
+E, [2014-01-28T11:31:34.786084 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/mixlib-shellout-1.3.0/lib/mixlib/shellout/unix.rb:233:in `select'
+E, [2014-01-28T11:31:34.786095 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/mixlib-shellout-1.3.0/lib/mixlib/shellout/unix.rb:233:in `attempt_buffer_read'
+E, [2014-01-28T11:31:34.786105 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/mixlib-shellout-1.3.0/lib/mixlib/shellout/unix.rb:61:in `run_command'
+E, [2014-01-28T11:31:34.786116 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/mixlib-shellout-1.3.0/lib/mixlib/shellout.rb:227:in `run_command'
+E, [2014-01-28T11:31:34.786126 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/shell_out.rb:65:in `run_command'
+E, [2014-01-28T11:31:34.786137 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/driver/base.rb:158:in `run_command'
+E, [2014-01-28T11:31:34.786147 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2014-01-28T11:31:34.786157 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2014-01-28T11:31:34.786167 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-01-28T11:31:34.786178 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-01-28T11:31:34.786188 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:305:in `call'
+E, [2014-01-28T11:31:34.786199 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:305:in `block in synchronize_or_call'
+E, [2014-01-28T11:31:34.786209 #20903] ERROR -- Kitchen: <internal:prelude>:10:in `synchronize'
+E, [2014-01-28T11:31:34.786219 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:303:in `synchronize_or_call'
+E, [2014-01-28T11:31:34.786229 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-01-28T11:31:34.786244 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-01-28T11:31:34.786255 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-01-28T11:31:34.786265 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-01-28T11:31:34.786275 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2014-01-28T11:31:34.786285 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-01-28T11:31:34.786295 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-01-28T11:31:34.786305 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-01-28T11:31:34.786315 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-01-28T11:31:34.786324 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-01-28T11:31:34.786335 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-01-28T11:31:34.786344 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-01-28T11:31:34.786354 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `public_send'
+E, [2014-01-28T11:31:34.786364 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2014-01-28T11:31:34.786374 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `map'
+E, [2014-01-28T11:31:34.786383 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2014-01-28T11:31:34.786393 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:146:in `block in test'
+E, [2014-01-28T11:31:34.786403 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-01-28T11:31:34.786413 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:137:in `test'
+E, [2014-01-28T11:31:34.786422 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-01-28T11:31:34.786432 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-01-28T11:31:34.786442 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2014-01-28T11:31:34.786452 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-01-28T11:31:34.786462 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-01-28T11:31:34.786472 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-01-28T11:31:34.786482 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-01-28T11:31:34.786492 #20903] ERROR -- Kitchen: /opt/ruby1.9/lib/ruby/gems/1.9.1/gems/test-kitchen-1.1.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-01-28T11:31:34.786502 #20903] ERROR -- Kitchen: /opt/ruby1.9/bin/kitchen:23:in `load'
+E, [2014-01-28T11:31:34.786515 #20903] ERROR -- Kitchen: /opt/ruby1.9/bin/kitchen:23:in `<main>'
+E, [2014-01-28T11:31:34.786526 #20903] ERROR -- Kitchen: ----------------------
