@@ -16,4 +16,3 @@ supports          'ubuntu', '>= 12.04'
 supports          'debian', '>= 7.2'
 supports          'redhat', '>= 6.3'
 supports	      'centos', '>= 6.3'
-
