@@ -31,6 +31,7 @@ directory node['rackspace_rsyslog']['config']['log_dir'] do
 end
 
 template "#{node['rackspace_rsyslog']['config']['config_prefix']}/rsyslog.d/35-server-per-host.conf" do
+  cookbook node['rackspace_rsyslog']['templates']['35-server-per-host.conf']
   source   '35-server-per-host.conf.erb'
   owner    'root'
   group    'root'

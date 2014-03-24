@@ -36,6 +36,7 @@ end
 # Our main stub which then does its own rsyslog-specific
 # include of things in /etc/rsyslog.d/*
 template "#{node['rackspace_rsyslog']['config']['config_prefix']}/rsyslog.conf" do
+  cookbook node['rackspace_rsyslog']['templates']['rsyslog.conf']
   source  'rsyslog.conf.erb'
   owner   'root'
   group   'root'
@@ -44,6 +45,7 @@ template "#{node['rackspace_rsyslog']['config']['config_prefix']}/rsyslog.conf" 
 end
 
 template "#{node['rackspace_rsyslog']['config']['config_prefix']}/rsyslog.d/50-default.conf" do
+  cookbook node['rackspace_rsyslog']['templates']['50-default.conf']
   source  '50-default.conf.erb'
   owner   'root'
   group   'root'

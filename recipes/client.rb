@@ -43,6 +43,7 @@ end
 remote_type = node['rackspace_rsyslog']['config']['use_relp'] ? 'relp' : 'remote'
 
 template "#{node['rackspace_rsyslog']['config']['config_prefix']}/rsyslog.d/49-remote.conf" do
+  cookbook  node['rackspace_rsyslog']['templates']['49-#{remote_type}.conf']
   source    "49-#{remote_type}.conf.erb"
   owner     'root'
   group     'root'

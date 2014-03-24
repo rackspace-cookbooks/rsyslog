@@ -79,3 +79,9 @@ else
     'daemon.*;mail.*;news.err;*.=debug;*.=info;*.=notice;*.=warn' => '|/dev/xconsole'
   }
 end
+
+default['rackspace_rsyslog']['templates']['rsyslog.conf'] = 'rackspace_rsyslog'
+default['rackspace_rsyslog']['templates']['35-server-per-host.conf'] = 'rackspace_rsyslog'
+default['rackspace_rsyslog']['templates']['49-relp.conf'] = 'rackspace_rsyslog'
+default['rackspace_rsyslog']['templates']['49-remote.conf'] = 'rackspace_rsyslog'
+default['rackspace_rsyslog']['templates']['50-default.conf'] = 'rackspace_rsyslog'
