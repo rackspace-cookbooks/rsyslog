@@ -1,5 +1,17 @@
-.kitchen
+.vagrant
 Berksfile.lock
-Gemfile.lock
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+/cookbooks
+.coverage/
 
-vendor/
+# Bundler
+Gemfile.lock
+bin/*
+.bundle/*
+
+.kitchen/

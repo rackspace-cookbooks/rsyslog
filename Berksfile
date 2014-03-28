@@ -1,6 +1,5 @@
-site :opscode
 metadata
 
 group :integration do
-  cookbook 'apt', '~> 2.0'
+  cookbook 'rackspace_apt', github: 'rackspace-cookbooks/rackspace_apt'
 end

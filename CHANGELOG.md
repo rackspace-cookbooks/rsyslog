@@ -2,6 +2,11 @@ rsyslog Cookbook CHANGELOG
 ==========================
 This file is used to list changes made in each version of the rsyslog cookbook.
 
+v2.0.0
+------
+- Rewrite for Rackspace specific environments.
+- Removed references to OS's not used within Rackspace
+- Changed name from rsyslog to rackspace_rsyslog
 
 v1.9.0
 ------
